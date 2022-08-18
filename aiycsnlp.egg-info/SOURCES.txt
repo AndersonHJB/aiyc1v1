@@ -3,10 +3,10 @@ MANIFEST.in
 README.md
 requirements.txt
 setup.py
-aiycsnlp/__init__.py
-aiycsnlp/__version__.py
-aiycsnlp/aiycsnlp.py
-aiycsnlp/aiycwordcloud.py
+aiyc1v1/__init__.py
+aiyc1v1/__version__.py
+aiyc1v1/aiycwordcloud.py
+aiyc1v1/simplenlp.py
 aiycsnlp.egg-info/PKG-INFO
 aiycsnlp.egg-info/SOURCES.txt
 aiycsnlp.egg-info/dependency_links.txt
