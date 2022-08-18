@@ -12,7 +12,7 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = 'aiyc-snlp'
+NAME = 'aiycsnlp'
 DESCRIPTION = 'AIYC SimpleNLP'
 URL = 'https://github.com/AndersonHJB/aiyc-snlp'
 EMAIL = 'bornforthis@bornforthis.com'

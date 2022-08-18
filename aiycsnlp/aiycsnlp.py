@@ -63,7 +63,7 @@ class Simple_NlP():
         return word_dict
 
     def open_html(self, filename="wordcloud_diamond.html"):
-        r = os.getcwd() + "/" + filename  # /Users/huangjiabao/GitHub/python-library/aiyc-snlp/tests
+        r = os.getcwd() + "/" + filename  # /Users/huangjiabao/GitHub/python-library/aiycsnlp/tests
         webbrowser.open('file:///' + r)
 
     def main(self):

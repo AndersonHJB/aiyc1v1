@@ -13,7 +13,7 @@ print(d)
 # import webbrowser
 # import os
 #
-# r = os.getcwd() + "/wordcloud_diamond.html"  # /Users/huangjiabao/GitHub/python-library/aiyc-snlp/tests
+# r = os.getcwd() + "/wordcloud_diamond.html"  # /Users/huangjiabao/GitHub/python-library/aiycsnlp/tests
 # # print('file:///' + r)
 # webbrowser.open('file:///' + r)
 # # print(r)
