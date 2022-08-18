@@ -1,4 +1,8 @@
-# Insert your code here. 
+# Insert your code here.
+from wordcloud import wordcloud
+import os, webbrowser
+
+
 class Simple_NlP():
 
     def __init__(self, path):
@@ -41,14 +45,39 @@ class Simple_NlP():
                     word_dict[word] += 1
                 else:
                     word_dict[word] = 1
-        print(word_dict)
+        # print(word_dict)
+        return word_dict
+
+    def clear_no_have(self, word_dict):
+        no_have_words = [
+            "no", "am", "the", "The", "an",
+            "I", "a", "of", "to", "and", "be",
+            "that"
+        ]
+        for nh in no_have_words:
+            if nh in word_dict:
+                del word_dict[nh]
+            else:
+                pass
+        # print(word_dict)
+        return word_dict
+
+    def open_html(self, filename="wordcloud_diamond.html"):
+        r = os.getcwd() + "/" + filename  # /Users/huangjiabao/GitHub/python-library/aiyc-snlp/tests
+        webbrowser.open('file:///' + r)
 
     def main(self):
         contents = self.read(self.path)
         # print(contents)
         rinse = self.rinse(contents)
         # print(rinse)
-        self.parse(rinse)
+        word_dict = self.parse(rinse)
+        cw = self.clear_no_have(word_dict)
+        words=list(cw.items())
+        print(words)
+        filename = "demo.html"
+        wordcloud(words=words, filename=filename, title="demo")
+        self.open_html(filename)
 
 
 if __name__ == '__main__':

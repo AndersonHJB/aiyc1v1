@@ -1,1 +1,1 @@
-from .snlp import *
+from .aiycsnip import *
