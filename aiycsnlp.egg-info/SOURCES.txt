@@ -6,7 +6,7 @@ setup.py
 aiycsnlp/__init__.py
 aiycsnlp/__version__.py
 aiycsnlp/aiycsnlp.py
-aiycsnlp/wordcloud.py
+aiycsnlp/aiycwordcloud.py
 aiycsnlp.egg-info/PKG-INFO
 aiycsnlp.egg-info/SOURCES.txt
 aiycsnlp.egg-info/dependency_links.txt

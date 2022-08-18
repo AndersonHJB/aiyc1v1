@@ -1,2 +1,2 @@
-# from .aiycsnlp import *
-# from .wordcloud import *
+from .aiycsnlp import *
+from .aiycwordcloud import *

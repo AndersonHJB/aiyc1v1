@@ -1,5 +1,5 @@
 # Insert your code here.
-from wordcloud import wordcloud
+from aiycwordcloud import aiycwordcloud
 import os, webbrowser
 
 
@@ -76,7 +76,7 @@ class Simple_NlP():
         words = list(cw.items())
         print(words)
         filename = "demo.html"
-        wordcloud(words=words, filename=filename, title="demo")
+        aiycwordcloud(words=words, filename=filename, title="demo")
         self.open_html(filename)
 
 
