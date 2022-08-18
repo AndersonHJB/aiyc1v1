@@ -52,7 +52,7 @@ class Simple_NlP():
         no_have_words = [
             "no", "am", "the", "The", "an",
             "I", "a", "of", "to", "and", "be",
-            "that"
+            "that",
         ]
         for nh in no_have_words:
             if nh in word_dict:
