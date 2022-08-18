@@ -18,7 +18,7 @@ URL = 'https://github.com/AndersonHJB/aiyc-snlp'
 EMAIL = 'bornforthis@bornforthis.com'
 AUTHOR = 'Bornforthis'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
@@ -81,13 +81,14 @@ class UploadCommand(Command):
 
         self.status('Building Source and Wheel (universal) distribution…')
         os.system('{0} setup.py sdist bdist_wheel --universal'.format(sys.executable))
-
+        os.system('python3 -m build')
         self.status('Uploading the package to PyPI via Twine…')
         os.system('twine upload dist/*')
 
         self.status('Pushing git tags…')
         os.system('git tag v{0}'.format(about['__version__']))
         os.system('git push --tags')
+        os.system('sh aiyc.sh')
 
         sys.exit()
 
@@ -103,7 +104,8 @@ setup(
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
-    packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
+    # packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
+    packages=find_packages(include=["aiycsnlp", "*.aiycsnlp", "*.aiycsnlp.*", "tests.*", "*tests"]),
     # If your package is a single module, use this instead of 'packages':
     # py_modules=['mypackage'],
 

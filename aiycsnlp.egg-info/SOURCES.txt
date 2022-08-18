@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+aiycsnlp/__init__.py
+aiycsnlp/__version__.py
+aiycsnlp/aiycsnlp.py
+aiycsnlp/wordcloud.py
+aiycsnlp.egg-info/PKG-INFO
+aiycsnlp.egg-info/SOURCES.txt
+aiycsnlp.egg-info/dependency_links.txt
+aiycsnlp.egg-info/top_level.txt
+tests/__init__.py
+tests/aiycsnlp-Tester.py
