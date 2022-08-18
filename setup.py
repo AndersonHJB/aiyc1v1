@@ -17,11 +17,11 @@ URL = 'https://github.com/AndersonHJB/aiyc-snlp'
 EMAIL = 'bornforthis@bornforthis.com'
 AUTHOR = 'Bornforthis'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.0.7'
+VERSION = '0.0.8'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
-    # 'requests', 'maya', 'records',
+    'pyecharts'
 ]
 
 # What packages are optional?
@@ -104,7 +104,7 @@ setup(
     python_requires=REQUIRES_PYTHON,
     url=URL,
     # packages=find_packages(exclude=["aiycsnlp", "wordcloud", "*.tests", "*.tests.*", "tests.*"]),
-    packages=find_packages(exclude=["aiycsnlp", "wordcloud"]),
+    packages=find_packages(include=["aiycsnlp", "wordcloud", "aiycsnlp.*", "*.aiycsnlp.*", "*.aiycsnlp"]),
     # packages=find_packages(include=["aiycsnlp", "*.aiycsnlp", "*.aiycsnlp.*", "tests.*", "*tests", "*.wordcloud", "*.wordcloud.*"]),
     # packages=find_packages(
     #     include=["aiycsnlp", "wordcloud"]),

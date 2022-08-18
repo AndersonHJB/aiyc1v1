@@ -10,6 +10,7 @@ aiycsnlp/wordcloud.py
 aiycsnlp.egg-info/PKG-INFO
 aiycsnlp.egg-info/SOURCES.txt
 aiycsnlp.egg-info/dependency_links.txt
+aiycsnlp.egg-info/requires.txt
 aiycsnlp.egg-info/top_level.txt
 tests/__init__.py
 tests/aiycsnlp-Tester.py
