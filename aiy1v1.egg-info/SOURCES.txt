@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+aiy1v1.egg-info/PKG-INFO
+aiy1v1.egg-info/SOURCES.txt
+aiy1v1.egg-info/dependency_links.txt
+aiy1v1.egg-info/requires.txt
+aiy1v1.egg-info/top_level.txt
+aiyc1v1/__init__.py
+aiyc1v1/__version__.py
+aiyc1v1/aiycwordcloud.py
+aiyc1v1/simplenlp.py

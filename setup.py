@@ -11,13 +11,13 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = 'aiycsnlp'
+NAME = 'aiy1v1'
 DESCRIPTION = 'AIYC SimpleNLP'
 URL = 'https://github.com/AndersonHJB/aiyc-snlp'
 EMAIL = 'bornforthis@bornforthis.com'
 AUTHOR = 'Bornforthis'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.0.14'
+VERSION = '0.0.1'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
