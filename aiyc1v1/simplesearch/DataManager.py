@@ -1,5 +1,5 @@
-class DataManager():
-    def __init__(self, path):
+class DataManager(object):
+    def __init__(self, path: str):
         self.path = path
         self.empty_content = ""
 
@@ -10,22 +10,22 @@ class DataManager():
         postfix = self.path.split(".")[-1]
         # print(postfix)
         if postfix == "txt":
-            self.read_file(self.path)
+            self.read_file()
         elif postfix == "py":
-            self.read_file(self.path)
+            self.read_file()
         elif postfix == "csv":
-            self.read_csv(self.path)
+            self.read_csv()
 
-    def read_file(self, path):
+    def read_file(self):
         """
         read file general
         通用文件打开函数
         """
-        with open(path, "r", encoding="utf-8") as f:
+        with open(self.path, "r", encoding="utf-8") as f:
             content = f.readlines()
             return content, len(content)
 
-    def read_csv(self, path):
+    def read_csv(self):
         """
         read csv
         """

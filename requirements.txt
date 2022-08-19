@@ -1,3 +1,4 @@
 Faker==14.0.0
+pandas==1.4.3
 pyecharts==1.9.1
 setuptools==62.3.2

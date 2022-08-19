@@ -2,6 +2,7 @@ import os
 # from DataManager import DataManager
 from aiyc1v1.simplesearch.DataManager import DataManager
 
+
 class SimpleSearch():
     """
     简易文本搜索器
@@ -32,7 +33,7 @@ class SimpleSearch():
     def __init__(self):
         pass
 
-    def path_generate(self, path):
+    def path_generate(self, path: str):
         path_lst = []
         for dirpath, dirnames, filenames in os.walk(path):
             # print(dirpath, dirnames, filenames)
@@ -74,8 +75,6 @@ class SimpleSearch():
         path_lst = self.path_generate(path)
         print(path_lst[1])
         datamanager = DataManager(path_lst[1]).postfix()
-
-
 
 
 if __name__ == '__main__':

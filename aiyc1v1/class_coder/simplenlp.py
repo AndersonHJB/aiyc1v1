@@ -4,8 +4,10 @@ from aiyc1v1.class_coder.wordcloud import wordcloud
 
 
 class Simple_NlP():
-    def __init__(self, path):
+    def __init__(self, path, filename="wordcloud_diamond.html", auto_open=True):
         self.path = path
+        self.filename = filename
+        self.auto_open = auto_open
 
     def read(self, path):
         with open(path, "r", encoding="utf-8") as f:
@@ -61,8 +63,8 @@ class Simple_NlP():
         # print(word_dict)
         return word_dict
 
-    def open_html(self, filename="wordcloud_diamond.html"):
-        r = os.getcwd() + "/" + filename  # /Users/huangjiabao/GitHub/python-library/aiycsnlp/tests
+    def open_html(self):
+        r = os.getcwd() + "/" + self.filename  # /Users/huangjiabao/GitHub/python-library/aiycsnlp/tests
         webbrowser.open('file:///' + r)
 
     def main(self):
@@ -74,9 +76,10 @@ class Simple_NlP():
         cw = self.clear_no_have(word_dict)
         words = list(cw.items())
         print(words)
-        filename = "demo.html"
-        wordcloud(words=words, filename=filename, title="demo")
-        self.open_html(filename)
+        # filename = "demo.html"
+        wordcloud(words=words, filename=self.filename, title="demo")
+        if self.auto_open:
+            self.open_html()
 
 
 if __name__ == '__main__':

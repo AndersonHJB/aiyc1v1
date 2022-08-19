@@ -12,12 +12,12 @@ from setuptools import find_packages, setup, Command
 
 # Package meta-data.
 NAME = 'aiyc1v1'
-DESCRIPTION = 'AI悦创·编程一对一教学代码库'
-URL = 'https://github.com/AndersonHJB/aiyc-snlp'
+DESCRIPTION = 'AI悦创·编程一对一教学代码库,长期招收编程一对一学员,微信:Jiabcdefh'
+URL = 'https://github.com/AndersonHJB/aiyc1v1'
 EMAIL = 'bornforthis@bornforthis.com'
 AUTHOR = 'Bornforthis'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.0.5'
+VERSION = '0.0.6'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
