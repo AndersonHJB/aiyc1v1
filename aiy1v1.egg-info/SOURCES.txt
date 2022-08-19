@@ -9,6 +9,8 @@ aiy1v1.egg-info/dependency_links.txt
 aiy1v1.egg-info/requires.txt
 aiy1v1.egg-info/top_level.txt
 aiyc1v1/__init__.py
-aiyc1v1/__version__.py
-aiyc1v1/aiycwordcloud.py
-aiyc1v1/simplenlp.py
+aiyc1v1/class_coder/GameBase.py
+aiyc1v1/class_coder/__init__.py
+aiyc1v1/class_coder/__version__.py
+aiyc1v1/class_coder/simplenlp.py
+aiyc1v1/class_coder/wordcloud.py

@@ -126,7 +126,7 @@ dl = [('Read', 1), ('Martin', 7), ('Luther', 7), ('King', 7), ('Jrs', 3), ('I', 
 # )
 
 
-def aiycwordcloud(words=words, filename="wordcloud_diamond.html", title="WordCloud-shape-diamond"):
+def wordcloud(words=words, filename="wordcloud_diamond.html", title="WordCloud-shape-diamond"):
     c = (
         WordCloud()
         .add("", words, word_size_range=[20, 100], shape=SymbolType.DIAMOND)
