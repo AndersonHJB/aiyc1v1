@@ -10,6 +10,7 @@ aiyc1v1.egg-info/dependency_links.txt
 aiyc1v1.egg-info/requires.txt
 aiyc1v1.egg-info/top_level.txt
 aiyc1v1/class_coder/GameBase.py
+aiyc1v1/class_coder/Q1.py
 aiyc1v1/class_coder/__init__.py
 aiyc1v1/class_coder/__version__.py
 aiyc1v1/class_coder/simplenlp.py

@@ -2,8 +2,8 @@
 import os, webbrowser
 from aiyc1v1.class_coder.wordcloud import wordcloud
 
-class Simple_NlP():
 
+class Simple_NlP():
     def __init__(self, path):
         self.path = path
 
