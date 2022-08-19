@@ -15,3 +15,6 @@ aiyc1v1/class_coder/__init__.py
 aiyc1v1/class_coder/__version__.py
 aiyc1v1/class_coder/simplenlp.py
 aiyc1v1/class_coder/wordcloud.py
+aiyc1v1/simplesearch/DataManager.py
+aiyc1v1/simplesearch/SimpleSearch.py
+aiyc1v1/simplesearch/__init__.py

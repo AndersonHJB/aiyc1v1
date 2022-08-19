@@ -18,6 +18,16 @@ pip install aiy1v1 -i https://pypi.org/simple
 pip install aiy1v1
 ```
 
+## Upgrade
+
+```python
+pip3 install --upgrade aiyc1v1 -i https://pypi.org/simple
+```
+
+```python
+pip3 install --upgrade aiyc1v1
+```
+
 
 
 ## Github

@@ -1,3 +1,8 @@
+import webbrowser, os
+# r = os.getcwd() + "/" + "demo.txt"  # /Users/huangjiabao/GitHub/python-library/aiycsnlp/tests
+r = os.getcwd() + "/" + "aiycsnlp-Tester.py"  # /Users/huangjiabao/GitHub/python-library/aiycsnlp/tests
+webbrowser.open('file:///' + r)
+# webbrowser.open('file:///' + "Users/huangjiabao/GitHub/python-library/aiyc1v1/aiyc1v1/class_coder/SimpleSearch.py")
 # d = {'Read': 1, 'Martin': 7, 'Luther': 7, 'King': 7, 'Jrs': 3, 'I': 15, 'Have': 3, 'a': 43, 'Dream': 1}
 # no_have_words = [
 #     "no", "am", "Martin",

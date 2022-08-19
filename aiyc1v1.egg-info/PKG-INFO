@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: aiyc1v1
-Version: 0.0.3
+Version: 0.0.4
 Summary: AI悦创·编程一对一教学代码库
 Home-page: https://github.com/AndersonHJB/aiyc-snlp
 Author: Bornforthis
@@ -35,6 +35,16 @@ pip install aiy1v1 -i https://pypi.org/simple
 
 ```python
 pip install aiy1v1
+```
+
+## Upgrade
+
+```python
+pip3 install --upgrade aiyc1v1 -i https://pypi.org/simple
+```
+
+```python
+pip3 install --upgrade aiyc1v1
 ```
 
 
