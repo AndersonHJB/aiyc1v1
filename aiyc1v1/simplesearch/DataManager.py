@@ -5,7 +5,7 @@ class DataManager(object):
     def __init__(self, path: str, ignore_postfix=[]):
         self.path = path
         self.empty_content = ""
-        self.ignore_postfix = ["zip", "png", "jpg", "jpge", "rar"]
+        self.ignore_postfix = ["zip", "png", "jpg", "jpge", "rar", "xml"]
         self.ignore_postfix.extend(ignore_postfix)
 
     def postfix(self):

@@ -1,6 +1,7 @@
 import os
 # from DataManager import DataManager
 from aiyc1v1.simplesearch.DataManager import DataManager
+import platform
 
 
 class SimpleSearch():
@@ -39,7 +40,10 @@ class SimpleSearch():
             # print(dirpath, dirnames, filenames)
             for filename in filenames:
                 # print(dirpath + filename)
-                path_lst.append(dirpath + filename)
+                if platform.system().lower() == "windows":
+                    path_lst.append(dirpath + "\\" + filename)
+                else:
+                    path_lst.append(dirpath + "/" + filename)
         return path_lst
 
     def path_diy_default(self):
@@ -61,7 +65,7 @@ class SimpleSearch():
             else:
                 return "Bye~"
         else:
-            user_path_input = input(tips)
+            # user_path_input = input(tips)
             sure = input(template % user_path_input)
             if sure == "" or sure.lower() == "yes":
                 return user_path_input
