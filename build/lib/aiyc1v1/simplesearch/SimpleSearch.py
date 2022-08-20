@@ -73,6 +73,7 @@ class SimpleSearch():
                 return "Bye~"
     def read(self, path_list: list):
         for path in path_list:
+            print("PATH:>>>", path)
             datamanager = DataManager(path)
             datamanager.postfix()
             print(datamanager.content)

@@ -6,7 +6,8 @@ class DataManager(object):
         self.path = path
         # self.empty_content = ""
         self.content = ""
-        self.ignore_postfix = ["zip", "png", "jpg", "jpge", "rar", "xml"]
+        self.ignore_postfix = ["zip", "png", "jpg", "jpge", "rar", "xml"
+                               "html", "js", "css", "docx", "json", "gitignore"]
         self.ignore_postfix.extend(ignore_postfix)
 
     def postfix(self):
@@ -18,7 +19,7 @@ class DataManager(object):
             return None
         # print(postfix)
         # else:
-        if postfix == "txt":
+        if postfix == "txt" or postfix == "md":
             self.read_file()
         elif postfix == "py":
             self.read_file()
