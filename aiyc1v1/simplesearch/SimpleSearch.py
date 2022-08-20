@@ -3,6 +3,8 @@ import os
 from aiyc1v1.simplesearch.DataManager import DataManager
 import platform
 
+DEFAULT_PATH = "/Users/huangjiabao/GitHub/MacBookPro16-Code/PythonCoder/StudentCoder"
+
 
 class SimpleSearch():
     """
@@ -51,7 +53,7 @@ class SimpleSearch():
         判断用户选择默认路径还是填写自定义路径
         默认路径处理方法：1 or 直接回车
         """
-        default_path = "/Users/huangjiabao/GitHub/MacBookPro16-Code/PythonCoder/StudentCoder"
+        # default_path = "/Users/huangjiabao/GitHub/MacBookPro16-Code/PythonCoder/StudentCoder"
         tips = "请输入您想要查询的路径:\n" \
                ">>> 1 # 输入 1 或者\"直接 enter\"\n" \
                ">>> 直接输入您的路径\n" \
@@ -59,9 +61,9 @@ class SimpleSearch():
         user_path_input = input(tips)
         template = "您选择使用默认路径:%s, \n如果确认请输入回车或者 yes(否则:no):"
         if user_path_input == "" or user_path_input == "1":
-            sure = input(template % default_path)
+            sure = input(template % DEFAULT_PATH)
             if sure == "" or sure.lower() == "yes":
-                return default_path
+                return DEFAULT_PATH
             else:
                 return "Bye~"
         else:
@@ -71,6 +73,7 @@ class SimpleSearch():
                 return user_path_input
             else:
                 return "Bye~"
+
     def read(self, path_list: list):
         for path in path_list:
             print("PATH:>>>", path)

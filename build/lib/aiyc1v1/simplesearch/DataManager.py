@@ -6,8 +6,9 @@ class DataManager(object):
         self.path = path
         # self.empty_content = ""
         self.content = ""
-        self.ignore_postfix = ["zip", "png", "jpg", "jpge", "rar", "xml"
-                               "html", "js", "css", "docx", "json", "gitignore"]
+        self.ignore_postfix = ["zip", "png", "jpg", "jpge", "rar", "xml",
+                               "html", "js", "css", "docx", "json", "gitignore",
+                               "ipynb", "parquet", "jsx", "mp3"]
         self.ignore_postfix.extend(ignore_postfix)
 
     def postfix(self):
@@ -49,3 +50,15 @@ class DataManager(object):
     def read_excel(self):
         self.content = pd.read_excel(self.path)
         # return content
+
+
+class DataSearch(object):
+    """存储搜索数据"""
+
+    def __init__(self, datasearch):
+        self.datasearch = datasearch
+
+    def save(self):
+        with open("DataSearch.txt", "a+", encoding="utf-8") as f:
+            f.write(self.datasearch + "\n")
+            f.close()

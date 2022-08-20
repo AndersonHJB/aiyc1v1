@@ -6,6 +6,11 @@
       <change beforePath="$PROJECT_DIR$/aiyc1v1/class_coder/__version__.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiyc1v1/class_coder/__version__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aiyc1v1/simplesearch/DataManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiyc1v1/simplesearch/DataManager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aiyc1v1/simplesearch/SimpleSearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiyc1v1/simplesearch/SimpleSearch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/aiyc1v1/simplesearch/DataManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/aiyc1v1/simplesearch/DataManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/aiyc1v1/simplesearch/SimpleSearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/aiyc1v1/simplesearch/SimpleSearch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/aiyc1v1-0.0.11-py2.py3-none-any.whl" beforeDir="false" afterPath="$PROJECT_DIR$/dist/aiyc1v1-0.0.11-py2.py3-none-any.whl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/aiyc1v1-0.0.11-py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/aiyc1v1-0.0.11.tar.gz" beforeDir="false" afterPath="$PROJECT_DIR$/dist/aiyc1v1-0.0.11.tar.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,7 +184,7 @@
       <option name="presentableId" value="Default" />
       <updated>1660868187021</updated>
       <workItem from="1660868188676" duration="16878000" />
-      <workItem from="1660918598252" duration="3990000" />
+      <workItem from="1660918598252" duration="4885000" />
     </task>
     <servers />
   </component>
@@ -203,7 +208,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/aiyc1v1$main.coverage" NAME="main Coverage Results" MODIFIED="1660870178311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aiyc1v1$simplenlp.coverage" NAME="simplenlp Coverage Results" MODIFIED="1660888755650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aiyc1v1/class_coder" />
-    <SUITE FILE_PATH="coverage/aiyc1v1$SimpleSearch.coverage" NAME="SimpleSearch Coverage Results" MODIFIED="1660977665795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aiyc1v1/class_coder" />
+    <SUITE FILE_PATH="coverage/aiyc1v1$SimpleSearch.coverage" NAME="SimpleSearch Coverage Results" MODIFIED="1660978513889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aiyc1v1/class_coder" />
     <SUITE FILE_PATH="coverage/aiyc1v1$Q1.coverage" NAME="Q1 Coverage Results" MODIFIED="1660886331152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aiyc1v1/class_coder" />
     <SUITE FILE_PATH="coverage/aiyc1v1$aiycsnlp_Tester.coverage" NAME="aiycsnlp-Tester Coverage Results" MODIFIED="1660889806792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
