@@ -42,7 +42,20 @@ pip3 install --upgrade aiyc1v1
 - [ ] GameBase：基础文字对话游戏
 - [ ] 
 
+## Error
 
+### 2022年08月20日
+
+```python
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('float64'), dtype('<U1')) -> None
+```
+
+预测是 dataframe to str 的错误，直接把读取到的结果，强制转换成 str
+
+```python
+self.content = str(pd.read_csv(self.path))
+elf.content = str(pd.read_excel(self.path))
+```
 
 ## 公众号：AI悦创【二维码】
 

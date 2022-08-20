@@ -44,11 +44,11 @@ class DataManager(object):
         """
         read csv
         """
-        self.content = pd.read_csv(self.path)
+        self.content = str(pd.read_csv(self.path))
         # return content
 
     def read_excel(self):
-        self.content = pd.read_excel(self.path)
+        self.content = str(pd.read_excel(self.path))
         # return content
 
 
