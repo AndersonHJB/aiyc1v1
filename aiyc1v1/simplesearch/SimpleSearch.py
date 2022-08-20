@@ -71,16 +71,23 @@ class SimpleSearch():
                 return user_path_input
             else:
                 return "Bye~"
+    def read(self, path_list: list):
+        for path in path_list:
+            datamanager = DataManager(path)
+            datamanager.postfix()
+            print(datamanager.content)
 
     def main(self):
         path = self.path_diy_default()
         # path = "/Users/huangjiabao/GitHub/MacBookPro16-Code/PythonCoder/StudentCoder"
         # print(path)
         path_lst = self.path_generate(path)
-        print(path_lst[1])
-        datamanager = DataManager(path_lst[1])
-        datamanager.postfix()
-        print(datamanager.empty_content)
+        self.read(path_lst)
+        # print(path_lst[1])
+        # datamanager = DataManager(path_lst[1])
+        # datamanager = DataManager(path_lst)
+        # datamanager.postfix()
+        # print(datamanager.empty_content)
 
 
 if __name__ == '__main__':

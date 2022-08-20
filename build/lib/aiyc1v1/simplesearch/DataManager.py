@@ -4,7 +4,8 @@ import pandas as pd
 class DataManager(object):
     def __init__(self, path: str, ignore_postfix=[]):
         self.path = path
-        self.empty_content = ""
+        # self.empty_content = ""
+        self.content = ""
         self.ignore_postfix = ["zip", "png", "jpg", "jpge", "rar", "xml"]
         self.ignore_postfix.extend(ignore_postfix)
 
@@ -32,7 +33,8 @@ class DataManager(object):
         通用文件打开函数
         """
         with open(self.path, "r", encoding="utf-8") as f:
-            self.empty_content = f.readlines()
+            # self.empty_content = f.readlines()
+            self.content = f.read()
             # return content, len(content)
             # return content
 
@@ -40,9 +42,9 @@ class DataManager(object):
         """
         read csv
         """
-        self.empty_content = pd.read_csv(self.path)
+        self.content = pd.read_csv(self.path)
         # return content
 
     def read_excel(self):
-        self.empty_content = pd.read_excel(self.path)
+        self.content = pd.read_excel(self.path)
         # return content
