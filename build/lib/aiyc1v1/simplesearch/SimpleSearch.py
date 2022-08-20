@@ -78,7 +78,9 @@ class SimpleSearch():
         # print(path)
         path_lst = self.path_generate(path)
         print(path_lst[1])
-        datamanager = DataManager(path_lst[1]).postfix()
+        datamanager = DataManager(path_lst[1])
+        datamanager.postfix()
+        print(datamanager.empty_content)
 
 
 if __name__ == '__main__':
