@@ -59,7 +59,7 @@ class SimpleSearch():
                ">>> 直接输入您的路径\n" \
                ":>>>"
         user_path_input = input(tips)
-        template = "您选择使用默认路径:%s, \n如果确认请输入回车或者 yes(否则:no):"
+        template = "您选择使用路径:%s, \n如果确认请输入回车或者 yes(否则:no):"
         if user_path_input == "" or user_path_input == "1":
             sure = input(template % DEFAULT_PATH)
             if sure == "" or sure.lower() == "yes":

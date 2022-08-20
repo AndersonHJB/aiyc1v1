@@ -57,6 +57,16 @@ self.content = str(pd.read_csv(self.path))
 elf.content = str(pd.read_excel(self.path))
 ```
 
+## Update
+### 2022年08月20日
+1. 修改用户输入提示
+```python
+template = "您选择使用默认路径:%s, \n如果确认请输入回车或者 yes(否则:no):"
+```
+to
+```python
+template = "您选择使用路径:%s, \n如果确认请输入回车或者 yes(否则:no):"
+```
 ## 公众号：AI悦创【二维码】
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
