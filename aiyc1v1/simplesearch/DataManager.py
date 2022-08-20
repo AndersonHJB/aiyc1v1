@@ -60,5 +60,6 @@ class DataSearch(object):
 
     def save(self):
         with open("DataSearch.txt", "a+", encoding="utf-8") as f:
+        # with open("DataSearch.txt", "a+") as f:
             f.write(self.datasearch + "\n")
-            f.close()
+            # f.close()

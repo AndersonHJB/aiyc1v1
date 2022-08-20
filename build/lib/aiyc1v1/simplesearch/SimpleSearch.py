@@ -1,6 +1,6 @@
 import os
 # from DataManager import DataManager
-from aiyc1v1.simplesearch.DataManager import DataManager
+from aiyc1v1.simplesearch.DataManager import DataManager, DataSearch
 import platform
 
 DEFAULT_PATH = "/Users/huangjiabao/GitHub/MacBookPro16-Code/PythonCoder/StudentCoder"
@@ -74,19 +74,21 @@ class SimpleSearch():
             else:
                 return "Bye~"
 
-    def read(self, path_list: list):
+    def read_to_save(self, path_list: list):
         for path in path_list:
             print("PATH:>>>", path)
             datamanager = DataManager(path)
             datamanager.postfix()
             print(datamanager.content)
+            datasearch = DataSearch(datamanager.content).save()
+
 
     def main(self):
         path = self.path_diy_default()
         # path = "/Users/huangjiabao/GitHub/MacBookPro16-Code/PythonCoder/StudentCoder"
         # print(path)
         path_lst = self.path_generate(path)
-        self.read(path_lst)
+        self.read_to_save(path_lst)
         # print(path_lst[1])
         # datamanager = DataManager(path_lst[1])
         # datamanager = DataManager(path_lst)
