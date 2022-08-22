@@ -2,7 +2,7 @@
 
 ## What?
 
-带编程一对一学员类基础练习所创建的代码，功能主要有：传入英文文本「.txt」，并调用，生成词云。
+带编程一对一学员学习 Python 所开发的库，便于零基础小白学习。和部分实用功能：简单的 NLP、类游戏、SimpleSearch 等功能。
 
 ## Install
 
@@ -20,6 +20,8 @@ pip install aiy1v1
 
 ## Upgrade
 
+版本在快速的迭代中，所以如果需要最新版本的话，请用下面的命令。
+
 ```python
 pip3 install --upgrade aiyc1v1 -i https://pypi.org/simple
 ```
@@ -32,7 +34,7 @@ pip3 install --upgrade aiyc1v1
 
 ## Github
 
-[https://github.com/AndersonHJB/aiyc1v1](https://github.com/AndersonHJB/aiyc1v1)
+本项目的 GitHub 地址：[https://github.com/AndersonHJB/aiyc1v1](https://github.com/AndersonHJB/aiyc1v1)
 
 
 

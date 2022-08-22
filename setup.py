@@ -17,7 +17,7 @@ URL = 'https://github.com/AndersonHJB/aiyc1v1'
 EMAIL = 'bornforthis@bornforthis.com'
 AUTHOR = 'Bornforthis'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.0.16'
+VERSION = '0.0.17'
 
 # What packages are required for this module to be executed?
 REQUIRED = [

@@ -75,6 +75,7 @@ class SimpleSearch():
                 return "Bye~"
 
     def read_to_save(self, path_list: list):
+        u = input("是否要更新检索数据？")
         for path in path_list:
             print("PATH:>>>", path)
             datamanager = DataManager(path)
