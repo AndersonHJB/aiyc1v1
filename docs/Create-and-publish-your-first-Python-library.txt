@@ -1,0 +1,493 @@
+A complete guide for the creation of a Python library, from zero to CI/CD pipeline and automatic documentation generation.
+
+Photo by Juliya Zemlyanaya on Unsplash — Package icon made by Freepik from www.flaticon.com
+Do you want to create a library and share your code with the entire world? Fantastic! In this article, we will deep dive into the creation of a library, and we’ll see in detail how to:
+
+— Write quality code to be published as a library.
+— Host your library on Pypi.
+— Tests and deploy your futures updates with a CI/CD pipeline.
+— Generate a documentation website automatically from your code.
+— And finally, host this doc for free on ReadTheDocs.
+
+At the end of your reading, the world of libraries and how to maintain them in the long run, will no longer hold any secrets for you!
+
+But first, let’s see when and why to create a library:
+
+When to create a library?
+When you have just finished a long project, full of pitfalls, where you felt sometimes helpless to solve certain situations; You had to search deep among the least upvoted posts of StackOverflow, and, as a result, you have produced many chunk of code that solve concrete problems.
+
+At this point, you have the possibility to create a library: You will only have to copy some code from your project. Easy!
+
+Why create a library?
+First, because the code you have written may, in the future, save other developers from going through the same long and expensive research process you did.
+
+Also, if your code provides a high level interface to solve some problems, you will help democratize the resolution of these problems to less experienced programmers. Therefore, your high-level library could, for example, become an entry point for others to easily get a quick result.
+
+
+Convinced recruiters — Photo by Christina @ wocintechchat.com on Unsplash
+And finally, because on your resume and during an interview, saying that you devote your free time to programming and developing libraries will undeniably work in your benefit.
+
+Confident? Let’s go to the creation of your lib!
+
+Get started: Maximize compatibility
+First, when creating your library’s project in your favorite IDE, use an older version of Python, so that your library can be compatible with as many current workflows as possible.
+
+For example: Python 3.9 released 2 months ago. If you decide to start with this new Python and use the new features of this version, only developers who have applications already running Python 3.9 will be able to use your library… So, very few people!
+
+So, go back a few versions and take Python 3.6.
+
+Write down your code
+To keep this article simple, you will create a library that will multiply one number by another. Nothing more.
+
+1. Start with a script
+
+Writing code always begins, in one way or another, with writing a small script. Like this one on the left.
+
+At line 8, the print will display the number 10.
+
+2. Refactor to a function
+This step is very simple: turn your script into a nice documented function.
+
+
+You must document your code, now! Be brave, and do it. Here is why:
+
+Later in this article, we will automatically generate a website with documentation based on the docstring (the specifications) of your functions. If you don’t write your doc now, you’ll have to do it later, by going over all your code again and trying to remember what each line does. This will be even longer and more boring…
+
+In addition, for novice developers, documenting your functions helps you to better cut out and locate what each piece of code does. This will make it easier for you to create Objects later.
+
+
+Relax, you’ve written Object-Oriented code — Photo by Joshua Aragon on Unsplash
+3. Transform to an Object
+Disclaimer: The following code is certainly overkill. But for the demonstration, we transform the previous function into an object.
+
+The Object-Oriented Programming (OOP) makes the maintainability of your code easier for you, for you in 6 months, and for the developers who will contribute to your library.
+
+
+But the main reason to write OOP is that when you develop a library, you need to think about: What is the architecture that will make my library as easy to use as possible?
+
+You have to put yourself in the user’s shoes by thinking about how you use other libraries: You usually import it, then you type one or two lines of code to, and that’s it!
+
+Try to make your library easy to use, and Pythonic. If you imagine things simply for the user, you will write your code in a clearer way, and it will be easier to maintain in the long run.
+
+Organize your library
+The code of your library is complete. Now you need to organize it so that it is ready to be published.
+
+1. Create a Python package
+Create a python package and name it as you want users to import your library.
+
+
+Creation of a Python package with PyCharm — Image by author
+For example, we will create the package “medium_multiply”. It will contain all the code of our library. And other developers will be able to import the library by writing:
+
+
+What is a Python package?
+A Python package is simply a folder with an empty “__init__.py” file inside. Some IDEs offer to create a package directly, and take care of creating the init file for you.
+
+All Python files, objects, functions and variables created in a package can be imported from anywhere in your project.
+
+2. Move your class to its own file
+So far, you have probably written your code in a “main.py” or “app.py” file at the root of your project. But only the code present in the “medium_multiply” package will be published.
+
+So now, you need to copy the “Multiplication” class into a new file “medium_multiply/multiplication.py”. Like this:
+
+
+Example of the Multiplication class moved to multiplication.py. Code stay the same.
+3. Call your library
+You can now start using your library as if you were a user, by importing it into your “main.py”.
+
+
+Et voilà! You have finished creating the architecture of your library.
+
+Bonus: Prettify the import
+
+The way the “Multiplication” class is imported is long and disgraceful… Wouldn’t it be shorter and prettier to import it just like line 5?
+
+To archieve that, just add the following line of code in the “__init__.py” file of your Python package:
+
+
+Warning: If you import a lot of classes into this file, the order of the declarations can be important! Especially when your classes need other parent classes to run.
+
+
+Your library passing the tests — Photo by John Cameron on Unsplash
+Writing the tests
+When you publish your library to the world, developers like to have documentation and examples. It’s much easier to copy an example than to read the whole specification!
+
+Sooner or later you will have to write these examples… And sooner rather than later, your examples may simply be a copy/paste of the tests that you are going to write now.
+
+1. Create a tests package
+
+The “tests” package and its content — Image by author
+Create a new “tests” package at the root of your project. Inside, create a new file called “multiplication_tests.py”.
+
+The architecture of your project should look like the image on the left.
+
+2. Write down your tests
+If you are not used to it, writing code that tests all cases can be long and boring. Fortunately, for this article, you just need to copy the following code.
+
+
+Here we use “unittest” and “math”, two built-in Python libraries (no installation needed).
+
+The Multiplication object is imported from the library too, and instantiated line 9. Our tests will be multiplications by 2.
+
+Line 16, we first test, the multiplication by 0, which should be 0.
+
+Then, line 23, the multiplication of 5 by 2, which should be equal to 10.
+
+Line 30, the multiplication of a negative number, -7 by 2, which should be equal to -14.
+
+Later, line 37, we tests a non-periodic rational number, (6/17) multiplied by 2.
+
+Last but not least, on line 44, PI multiplied by 2. Because why not?
+
+And the last two lines of this file are the entry point of the script: They will launch the execution of the tests.
+
+3. Run the tests
+You just wrote all your tests! Now all you have to do is run them. With PyCharm, just press one of the green buttons displayed in your file, or run the launcher on the top right corner:
+
+
+Running the tests in PyCharm — Image by author
+You can also run the tests by typing this line directly in your console:
+
+python -m unittest -v tests/multiplication_tests.py
+Once executed, an “OK” is displayed in the console. This means that your code has passed all the tests without error. Congratulations!
+
+
+All tests passed — Image by author
+Adding a dependency
+You will rarely write a library that has no dependencies, that does not use any other existing library. In order to stick a little closer to the reality, you will now import and use NumPy to do the multiplications.
+
+1. Edit your code
+Adding and using NumPy in our Multiplication class is very simple:
+
+
+multiplication.py without documentation — Keep things simple
+For clarity, the docstring of this example has been removed.
+
+On line 2, numpy is imported and renamed “np”.
+
+The line 12, which executes the multiplication and returns the result, is replaced: np.dot() is now used to multiply one number by another.
+
+2. Add a requirements.txt
+The requirements.txt file is used in each Python project to specify its dependencies. So you can create one at the root and add a line with “numpy”.
+
+
+A requirements.txt with numpy — Image by author
+3. Run the tests again
+After each modification of the code, you must run your tests. In our case, the tests pass without any problem. Your library is almost ready to be published! Let’s go to the next step.
+
+
+Prepare for the launch — Photo by SpaceX on Unsplash
+Prepare for the launch
+You’re now going to set up a pipeline that, every time you push a modification on GitHub, will automatically:
+
+— Run the tests.
+— Publish the library update on Pypi.
+
+All this requires the addition of a few files to your project.
+
+1. Add a .gitignore for Github
+First of all, the code of your library needs to be published somewhere where everyone can read it and modify it, if they want to. Because a living library is open-source, so that everyone can propose and discuss modifications. For this, we will naturally use Github.
+
+And to avoid unnecessary files being added to your repository (e.g: PyCham config, or your Python env), you will add a “.gitignore” file to the root of your project.
+
+
+gitignore.io, automatically create .gitignore — Image by author
+You can do this on PyCharm with the .ignore plugin. Or by generating a file via gitignore.io, which you then copy to a “.gitignore” file. Link to generate the file.
+
+2. Write a welcoming README.md
+At the root of your project, create a “README.md” file.
+
+
+A simple and concise README.md — Click on “View raw” to copy.
+This file will be displayed on the Pypi page of your project, the one that developers visit when they search for new packages.
+
+It is therefore important that your README is welcoming and that it summarizes in a few lines how to install and use your library!
+
+You can write it quickly by copying the code from your “main.py” and adding a few titles, like in this example.
+
+3. The most important: A setup.py
+The “setup.py” file is specific to the creation of a library: It will indicate to Pypi (the Python Package Index) the version of your library, as well as a lot of other metadata for its referencing.
+
+This way, developers will be able to install your package automatically with the following command:
+
+pip install medium-multiply
+Here is the content that you can copy in a new “setup.py” file at the root of your project:
+
+
+The setup.py of your library
+In this file, up to line 6, we first have the imports.
+
+Then, up to line 13, we load the content of the previously created README.md into a variable. This way, the content of your readme will be displayed on Pypi.
+
+In line 17 and following, we give the library a name, a version and a short description.
+
+Further on, line 22, we specify the URL of the website we are going to create next. Followed by the author, the email.
+
+The classifiers, line 26, are simply tags for referencing on Pypi.
+
+And finally, line 37, we load the “medium_multiply” package, which is the heart of the library. And we specify again the dependencies of this library with “numpy” on line 39.
+
+
+Manually publishing your library — Photo by Andrik Langfield on Unsplash
+The first publish: manually
+Before creating an automatic publishing process, your library must be manually sent to Pypi at least once. To do this, you need the “twine” package, a collection of utilities which makes the publication of libraries easier. Install it with the following command:
+
+pip install wheel
+pip install twine
+1. Compile your library
+You are now ready to build your library. Type the following command in your console:
+
+python setup.py sdist bdist_wheel
+And let the magic happen: Several folders appear in your project. Don’t worry about the mess they create, you will be free to delete all of these once your library has been sent to Pypi for the first time.
+
+
+Three new folders were created — Image by author
+These folders contain many files: In the “dist” folder, you will find the packaged version of your library.
+
+These are the two files that will be sent to Pypi.
+
+2. Check the build
+But before, you can check if the build went well with this short command:
+
+twine check dist/*
+The console prints two lines with “PASSED”. Your library is ready to take off!
+
+
+Twine check PASSED, your library is ready — Image by author
+3. Upload to Test Pypi
+You are now ready to upload your library on Pypi. You will first upload it on the Test Pypi, in order to check, once again, that everything is correct. If it is not already done, create an account on Pypi and on Test Pypi. Then, type:
+
+twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+Test Pypi is a very useful tool: It allows you to publish, test and make mistakes, without having any influence on your packages published on the real Pypi.
+
+
+Your package successfully uploaded to Test Pypi — Image by author
+After you entered the command, you will be asked to login with the username and password you provided when you created your account. Your library is then uploaded to Test Pypi. As a confirmation, the link of the newly created page is displayed. Congratulations!
+
+4. Upload to Pypi
+Are you satisfied with the result? Let the world discover your library: publish it on the real Pypi.
+
+twine upload dist/*
+Type the command above, connect to Pypi and voilà! Your library is published. Anyone can now download and install it with “pip install medium-multiply”.
+
+
+The Pypi page of your amazing library — Image by author
+Continuous deployment
+You have just completed the manual upload process. It’s time to automate it with Travis, a free CI/CD tool for public repositories hosted on Github.
+
+You can already create an account on Travis CI.com, and connect it to your Github account.
+
+1. Increment your library version
+We will publish an update of your library. To do so, you must first increment its version in the “setup.py” file: Replace “0.1.0” by “0.1.1”, for example.
+
+2. Create a .travis.yml file
+When you publish your project on Github, Travis will download it to its servers and execute the instructions written in a “.travis.yml” file. Go ahead, create this new file at the root of your project, and copy the following lines:
+
+
+A .travis.yml file, to tell Travis-ci.com what to do
+In this file, line 3, we first tell Travis which version of Python to use.
+
+On line 8, we update pip.
+
+We install the dependencies of our library (line 11), so that Travis can run our tests (line 14).
+
+Finally, from line 16, we tell Travis to use a token to deploy the master branch of our repo on Pypi. This chunk of code is the one that will automatically build and upload the library.
+
+The commands in this file will be executed one after the other. If one of them returns an error (e.g. Your tests fail), Travis will stop without executing the following ones.
+
+This way, each time you push a new version of your library, you are sure that it will be deployed and sent to Pypi only if it passes the tests! This is a good way to make sure that other developers only receive working versions of your library.
+
+3. Get your Pypi token
+You need to give Travis your Pypi token, so he can login to your account to update the library.
+
+
+Add API token on Pypi — Image by author
+Go to the Pypy website. In the “Account settings” category, click on the “Add API token” button.
+
+Give a name to your token (e.g. “Travis deployment”). In the “Scope” field, choose the library you just uploaded.
+
+Then click on “Add token”. Your token is displayed, write it down ! If you close this web page without saving it, you will have to generate another one.
+
+4. Share on Github
+
+PyCharm: share a project on Github — Image by author
+Now publish your project on Github, in a public repository.
+
+Make sure that the main branch of your repo is “master”. You can change this setting on Github.
+
+You prefer to name your branch “main”? No worries. Just replace the last line of the “.travis.yml” file with “branch: main”.
+
+5. Update your Travis
+Login to your account on Travis-ci.com. A build should be in progress, and will end with an error:
+
+
+Your first Travis build failed. See the “More options” button in the top right corner — Image by author
+This is fine! Travis couldn’t connect to Pypi to upload your library because he doesn’t have your token yet. So let’s add it: Click on the “More options” button (visible at the top right of the image), then on “Settings”.
+
+Find the “Environment Variables” section, and add a new variable named “PYPI_TOKEN” with your previously created Pypi token as value.
+
+
+Adding a PYPI_TOKEN variable with your Pypi token as value — Image by author
+You can now go back to the previous page and click on “Restart build”. Wait for a few seconds, you will see a green “Build passed” appearing.
+
+You have just set up the continuous integration and continuous deployment. From now on, every time you will push on your “master” branch, Travis will automatically run the tests and publish the update of your library on Pypi. Congratulations!
+
+
+Lift-off ! Your library is on the web — Photo by SpaceX on Unsplash, package and v-mark icons made by Freepik from www.flaticon.com
+Documentation hosted on the web, automatically
+Now, you will set up a system that hosts documentation on readthedocs.org, a free service, with Sphinx, a python package to generate doc. And of course, you want this system to update the documentation automatically.
+
+This way, you will have almost nothing to write by hand. Just copy and paste some of your tests from time to time to make examples. And add here and there a short sentence of explanation.
+
+Reminder: Your library does not exist, if it is not documented. How could other developers use it if they have no idea of what to type?
+
+1. Install Sphinx
+Let’s start by installing the sphinx package, with the following command:
+
+pip install sphinx
+Now, create and access a “docs” folder at the root of your project. I recommend that you do this on the command line because you will then have to run Sphinx via the console:
+
+mkdir docs
+cd docs
+2. Setup your documentation
+It’s time to create all the necessary files to generate your documentation site. And Shpinx will do it for you, thanks to this command:
+
+sphinx-quickstart
+You can use the default settings of Sphinx. But be careful to specify the name of your project (here “Medium Multiply”), and your name as author.
+
+
+Specifying the Project name and Author with sphinx-quickstart — Image by author
+Once the installation is complete, you will see some files and folders appear in your “docs” folder.
+
+
+“docs” folder populated — Image by author
+You can ignore those whose name starts with an _underscore: they contain the built, compiled version of your documentation. You should not push them on Github.
+
+3. Edit the config.py file
+The configuration file is important: If your documentation doesn’t work, if you have errors when you try to build your site, it’s most likely due to an error in the “conf.py”file. Here’s how you need to modify it:
+
+
+Your conf.py modified
+On this example file, I have deliberately deleted all the comments, except the main titles so that you can situate yourself.
+
+In the “Path Setup” section, copy the three lines. Pay particular attention to line 4 which tells Sphinx that the root of the project is not the “docs” folder, but the parent folder!
+
+In “General configuration”, three extensions are added. The first one allows to use the markdown in Sphinx. And the following ones allows Sphinx to generate documentation from the docstring of your functions.
+
+Finally, in the “Options for HTML output” section, the Sphinx theme is replaced by “sphinx_rtd_theme”, which is the most commonly used theme for Python documentation websites.
+
+4. Install the missing dependencies
+If this is the first time you are using Spinx, you need to install the dependencies we just specified in the configuration file. Type the following commands:
+
+pip install recommonmark
+pip install sphinx_rtd_theme
+5. Build your doc
+It’s time to generate the HTML pages for your future documentation site. Make sure you are in the “docs” folder, and type the following command:
+
+make html
+You will then see this nice message appear:
+
+
+Sphinx build succeeded — Image by author
+Congratulation, your Shpinx’s installation is working properly. You can preview your site by opening the “index.html” file, which can be found in “docs/_build/html”.
+
+
+All Sphinx components connected — Photo by 🇨🇭 Claudio Schwarz | @purzlbaum on Unsplash
+Generate documentation from your code
+You have probably noticed that the site you just generated is empty: the documentation of your functions is missing! So let’s see now how to automatically create documentation from specifications (docstings) of your code.
+
+1. Create the folder tree
+In the “docs” folder, create a sub-folder “source”, then two other sub-folders “api” and “examples”. Like this:
+
+
+“api” and “examples” folders — Image by author
+We will put there all the documentation files specific to your project, that we are going to create now.
+
+2. Link the website to your code
+In the “api” folder, create a “multiplication.rst” file. The “.rst” files (aka reStructuredText) are an alternative to the “.md” (aka Markdown), supported by Sphinx.
+
+And can will copy the following lines:
+
+
+multiplication.rst, click on “view raw” to see the code
+This file allows you to retrieve the docstring from the Multiplication class, to to generate automatically a webpage with documentation.
+
+It will be executed every time you push your code on Github, so that the site is always up to date with your code!
+
+3. Add an entry to the navigation tab
+Your beautiful class and its doc must be accessible by the user. Add an entry in the site menu that leads to the newly created page, like this:
+
+
+Your index.rst modified with a link to your doc page
+Pay attention to the “source/api/multiplication” line we added. This is the path to the previously created “multiplication.rst” file, without the extension.
+
+About the navigation menu
+You can create as many sections as you want in your menu by copying the following code. For example, you can create later another menu “Examples”, or “Getting started”.
+
+
+A chunk of index.rst, to define you nav menu
+On Sphinx, a section of the menu begins with “toctree”.
+
+The “maxdepth” parameter defines the depth of subtitle display.
+
+And finally, “caption” is simply the name given to your section.
+
+4. Build your doc
+Re-generate the HTML files for your site. Type the following command from the “docs” folder:
+
+make html
+Then open the file “docs/_build/html/index.html” in your browser. Your documentation is created!
+
+
+The references of you Multiplication class, generated from you code — Image by author
+Hosting on ReadTheDocs
+ReadTheDocs.org is a service allowing you to build and host your documentation for free. Many popular libraries use it, such as Rasterio, Scrapy or Requests.
+
+During this last step, we will host the site previously created on ReadTheDocs. So, go on and create an account on it.
+
+1. Add a .readthedocs.yml file
+You will add again another configuration file to the root of your project, named “.readthedocs.yml”.
+
+
+The purpose of this file is to tell ReadTheDocs how to build your documentation.
+
+For this, line 9 and 10, it is told to use Sphinx, with the path to the configuration file.
+
+Line 13 tells ReadTheDocs to create a PDF version of the site.
+
+And finally, on lines 17 to 19, it is told to install the dependencies of your library, so that it can run it to retrieve your docstring.
+
+2. Import your repository
+Go to your ReadTheDocs dashboard, by clicking on the “My project” tab of your profile. Then press “Import a project”, as shown below:
+
+
+“Import a Project” button on ReadTheDocs dashboard — Image by author
+Find the repository of your library, and import it by pressing the “+”.
+
+Then, specify the name of your project (e.g. “medium-multiply”). It will be used to generate the URL of your site (“medium-multiply.readthedocs.io”). And finally click on “Next”.
+
+3. Push to Github
+You will now push the changes to your project on Github. Make sure to commit the “.readthedocs.yml” file. For the “docs” folder, make sure you send only the files and folders highlighted in blue in the image below:
+
+
+Files and folders to push from “docs” — Image by author
+Reminder: folders starting with an underscore should not be pushed on Github. ReadTheDocs will build its own version of your documentation.
+
+That’s it!
+Wait a few seconds while ReadTheDocs recovers your files and builds your site. Refresh the “Build” page of your project until you see “Passed”.
+
+
+The build passed on ReadTheDocs — Image by author
+And that’s it! You can visit your library’s website by clicking on the green “View doc” button. You can also consult the website of the library we just created during this article: medium-multiply.readthedocs.io.
+
+
+Deep dive completed — Photo by Caroline Hernandez on Unsplash
+Your deep dive is now completed!
+
+You’ve just learned how to create a solid library with tests; How to set up a pipeline to quickly deploy your updates; And how to easily publish a website with up-to-date documentation.
+
+Don’t hesitate to fork the repository of the “medium-multiply” library, created especially for this article.
+
+Thanks for reading! Any feedback is welcomed, you can reach me out here in the comments, or on Twitter: Joffreybvn. And stay tuned for more beginner-friendly guides.
+
+Thanks to Elliot Gunn

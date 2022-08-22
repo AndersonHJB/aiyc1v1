@@ -40,7 +40,7 @@ pip3 install --upgrade aiyc1v1
 
 ## 已有功能代码
 
-- [x] SimpleNLP：简单的自然语言处理代码「仅仅支持英文」——词频分析、词云生成
+- [x] SimpleNLP：简单的自然语言处理代码「仅仅支持英文」——词频分析、词云生成。文档：[SimpleNLP.md](./docs/SimpleNLP.md)
 - [ ] GameBase：基础文字对话游戏
 - [ ] 
 
