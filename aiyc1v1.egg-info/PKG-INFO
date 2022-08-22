@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: aiyc1v1
-Version: 0.0.18
+Version: 0.0.19
 Summary: AI悦创·编程一对一教学代码库,长期招收编程一对一学员,微信:Jiabcdefh
 Home-page: https://github.com/AndersonHJB/aiyc1v1
 Author: Bornforthis
@@ -78,7 +78,12 @@ self.content = str(pd.read_csv(self.path))
 elf.content = str(pd.read_excel(self.path))
 ```
 
+
+
+
+
 ## Update
+
 ### 2022年08月20日
 1. 修改用户输入提示
 ```python
