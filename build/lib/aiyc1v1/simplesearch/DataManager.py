@@ -63,3 +63,8 @@ class DataSearch(object):
         # with open("DataSearch.txt", "a+") as f:
             f.write(self.datasearch + "\n")
             # f.close()
+
+# if __name__ == '__main__':
+#     d = DataManager("SimpleSearch.py")
+#     # d.read_file()
+#     d.read_csv()
