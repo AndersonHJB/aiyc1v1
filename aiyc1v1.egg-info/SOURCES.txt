@@ -9,6 +9,8 @@ aiyc1v1.egg-info/SOURCES.txt
 aiyc1v1.egg-info/dependency_links.txt
 aiyc1v1.egg-info/requires.txt
 aiyc1v1.egg-info/top_level.txt
+aiyc1v1/GameFunction/GameFunction.py
+aiyc1v1/GameFunction/__init__.py
 aiyc1v1/class_coder/GameBase.py
 aiyc1v1/class_coder/Q1.py
 aiyc1v1/class_coder/__init__.py
