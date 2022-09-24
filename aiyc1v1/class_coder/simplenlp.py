@@ -111,5 +111,5 @@ class Simple_NlP():
 
 if __name__ == '__main__':
     path = "data-test/I_have_a_Dream.txt"
-    opt = Simple_NlP(path=path)
+    opt = Simple_NlP(path=path, clear_symbols=[])
     opt.main()
