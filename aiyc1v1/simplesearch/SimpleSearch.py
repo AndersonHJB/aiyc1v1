@@ -83,7 +83,6 @@ class SimpleSearch():
             print(datamanager.content)
             datasearch = DataSearch(datamanager.content).save()
 
-
     def main(self):
         path = self.path_diy_default()
         # path = "/Users/huangjiabao/GitHub/MacBookPro16-Code/PythonCoder/StudentCoder"
