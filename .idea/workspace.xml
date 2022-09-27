@@ -5,33 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1397b7a-e13a-4051-97e3-ee370afde819" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/aiyc1v1/NoteSearch/NoteSearch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aiyc1v1/NoteSearch/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aiyc1v1/NoteSearch/__init___.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiy1v1.egg-info/PKG-INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiy1v1.egg-info/SOURCES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiy1v1.egg-info/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiy1v1.egg-info/requires.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiy1v1.egg-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiyc.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiyc1v1.egg-info/PKG-INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiyc1v1.egg-info/SOURCES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiyc1v1.egg-info/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiyc1v1.egg-info/requires.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiyc1v1.egg-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiyc1v1/simplesearch/SimpleSearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiyc1v1/simplesearch/SimpleSearch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiycsnlp.egg-info/PKG-INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiycsnlp.egg-info/SOURCES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiycsnlp.egg-info/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiycsnlp.egg-info/requires.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiycsnlp.egg-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/aiyc1v1-0.0.23-py2.py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/aiyc1v1-0.0.23-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/aiyc1v1-0.0.23.tar.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiyc1v1/NoteSearch/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/aiyc1v1/NoteSearch/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiyc1v1/NoteSearch/__init___.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiyc1v1/NoteSearch/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +194,7 @@
       <workItem from="1661682830135" duration="3000" />
       <workItem from="1661682841355" duration="614000" />
       <workItem from="1663516734906" duration="20000" />
-      <workItem from="1664251708418" duration="6308000" />
+      <workItem from="1664251708418" duration="7243000" />
     </task>
     <servers />
   </component>
