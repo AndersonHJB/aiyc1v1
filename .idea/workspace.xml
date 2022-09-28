@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1397b7a-e13a-4051-97e3-ee370afde819" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/aiyc1v1/NoteSearch/__version__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiyc1v1/NoteSearch/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/aiyc1v1/NoteSearch/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiyc1v1/NoteSearch/__init___.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiyc1v1/NoteSearch/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiyc1v1/NoteSearch/NoteSearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiyc1v1/NoteSearch/NoteSearch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +43,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/huangjiabao/GitHub/aiyc1v1",
+    "last_opened_file_path": "/Users/huangjiabao/GitHub/aiyc1v1/aiyc1v1/NoteSearch",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -53,6 +54,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/aiyc1v1/NoteSearch" />
       <recent name="$PROJECT_DIR$/aiyc1v1/GameFunction" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -194,7 +196,8 @@
       <workItem from="1661682830135" duration="3000" />
       <workItem from="1661682841355" duration="614000" />
       <workItem from="1663516734906" duration="20000" />
-      <workItem from="1664251708418" duration="7243000" />
+      <workItem from="1664251708418" duration="9059000" />
+      <workItem from="1664338723613" duration="1231000" />
     </task>
     <servers />
   </component>
