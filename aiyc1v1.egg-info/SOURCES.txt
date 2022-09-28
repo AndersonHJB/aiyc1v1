@@ -11,6 +11,7 @@ aiyc1v1.egg-info/requires.txt
 aiyc1v1.egg-info/top_level.txt
 aiyc1v1/GameFunction/GameFunction.py
 aiyc1v1/GameFunction/__init__.py
+aiyc1v1/NoteSearch/DataRead.py
 aiyc1v1/NoteSearch/NoteSearch.py
 aiyc1v1/NoteSearch/__init__.py
 aiyc1v1/NoteSearch/__version__.py

@@ -1,3 +1,9 @@
-from aiyc1v1 import Simple_NlP, Creature
-Simple_NlP("I_have_a_Dream.txt").main()
+from aiyc1v1 import DataRead
+
+abs_path = r"/Users/huangjiabao/GitHub/aiyc1v1/aiyc1v1/NoteSearch/README.md"
+d = DataRead(path=abs_path)
+d.main()
+
+
+
 

@@ -6,3 +6,4 @@ from aiyc1v1.simplesearch.SimpleSearch import SimpleSearch  # 简易检索器
 from aiyc1v1.simplesearch.DataManager import DataManager, DataSearch  # 文件读取 class
 # from aiyc1v1.simplesearch.DataManager import DataSearch
 from aiyc1v1.GameFunction import GameFunction
+from aiyc1v1.NoteSearch.DataRead import DataRead
