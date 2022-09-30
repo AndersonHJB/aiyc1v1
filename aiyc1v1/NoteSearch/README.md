@@ -55,5 +55,9 @@ pip install aiyc1v1
 ## 开发日志
 
 -[x] 2022年09月30日:
+  - 文件后缀全部小写；
+  - 添加目前所能处理的目标文件后缀；
   - 开发 .py 文件通用读取；
-  - 并解决相应 `行` 数问题。
+  - 数据对应行数解决；
+  - 并解决相应 `行` 数问题；
+  - [https://github.com/AndersonHJB/aiyc1v1/commit/b8e11eb6af9b7011f0091a951552aa94386f53b6](https://github.com/AndersonHJB/aiyc1v1/commit/b8e11eb6af9b7011f0091a951552aa94386f53b6)
