@@ -1,6 +1,6 @@
 import os
 # from DataManager import DataManager
-from aiyc1v1.simplesearch.DataManager import DataManager, DataSearch
+from aiyc1v1.simplesearch.DataManager_old import DataManager, DataSearch
 import platform
 
 DEFAULT_PATH = "/Users/huangjiabao/GitHub/MacBookPro16-Code/PythonCoder/StudentCoder"

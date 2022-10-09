@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2022/9/28 13:39
 # @Author  : AI悦创
-# @FileName: DataRead.py
+# @FileName: DataManager.py
 # @Software: PyCharm
 # @Blog    ：https://bornforthis.cn/
 import pandas as pd
