@@ -1,9 +1,10 @@
 from aiyc1v1 import DataRead
 
-abs_path = r"/Users/huangjiabao/GitHub/aiyc1v1/aiyc1v1/NoteSearch/DataManager.py"
+abs_path = r"/Users/huangjiabao/GitHub/aiyc1v1/aiyc1v1/"
 d = DataRead(path=abs_path)
-content = d.DataManager_Engine()
-print(content)
+d.path_generate()
+# content = d.DataManager_Engine()
+# print(content)
 import re
 # query = input(":>>>")
 # pattern = '.*?FilePath:(.*?).*?line:(\d+)>>>.*?(print).*?'

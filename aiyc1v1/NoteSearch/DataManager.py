@@ -5,13 +5,14 @@
 # @Software: PyCharm
 # @Blog    ：https://bornforthis.cn/
 from uuid import uuid4
-
-import pandas as pd
+import json
+import os
 
 # 此库需要用到的 static variable
 TEMPLATE_CONTENT = "FingerPrint={uuid};line:{index}>>>{content}"
 # TEMPLATE_PATH = "FilePath:{path}"
 TEMPLATE_CONTENT_WITH_PATH = "FilePath:{path}\n{content}"
+DATA_FILE_PATH_DICT = {"DictPath": []}  # 构建存储成 json。
 
 class DataRead(object):
     def __init__(self, path: str):
@@ -88,14 +89,21 @@ class DataRead(object):
 
     # ------------索引器 end------------
 
-    def DataManager_Engine(self):
-        suffix = self.postfix(path=self.path)
+    def DataManager_Engine(self, path):
+        suffix = self.postfix(path=path)
         # print(suffix)
         content = self.decide_suffix(path=self.path,
                                      suffix=suffix)
         return self.parse(content)
 
+    def path_generate(self):
+        """生成全部要检索的路径"""
+        for dirpath, dirnames, filenames in os.walk(self.path):
+            # print(dirpath, dirnames, filenames)
+            for filename in filenames:
+                filepath = os.path.join(dirpath, filename)
+                print(filepath)
+
 class DataSave(object):
     def __int__(self, path):
         self.path = path
-
