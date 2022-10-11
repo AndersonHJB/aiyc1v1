@@ -14,7 +14,8 @@ TEMPLATE_CONTENT = "FingerPrint={uuid};line:{index}>>>{content}"
 TEMPLATE_CONTENT_WITH_PATH = "FilePath:{path}\n{content}"
 DATA_FILE_PATH_DICT = {"DictPath": []}  # 构建存储成 json。
 
-class DataRead(object):
+
+class DataManger(object):
     def __init__(self, path: str):
         self.path = path
 
@@ -24,7 +25,7 @@ class DataRead(object):
         suffix = path.split(".")[-1]
         sum_suffix = [
             "py", "xlsx", "xls", "html", "css", "js",
-            "txt", "csv", "json"
+            "txt", "csv", "json", "md"
         ]
         # print(suffix)
         # return path, suffix
@@ -45,12 +46,18 @@ class DataRead(object):
             return self.general_read(path)
         elif suffix == "txt":
             return self.general_read(path)
+        elif suffix == "md":
+            return self.general_read(path)
 
     # ------------搜索器 end------------
 
     # ------------索引器 start------------
-    def parse(self, content):
-        uuid = uuid4()
+    def parse(self, content, path):
+        global DATA_FILE_PATH_DICT
+        uuid = str(uuid4())
+        detail_dict_to_json_value = {uuid: path}
+        # print(detail_dict_to_json_value)
+        DATA_FILE_PATH_DICT["DictPath"].append(detail_dict_to_json_value)
         # json
         """清洗数据，清洗成方便后面索引的数据"""
         # content_lst = []
@@ -81,7 +88,7 @@ class DataRead(object):
             #     print(value, end="")
             # save(value)
         # path = TEMPLATE_PATH.format(path=self.path)
-        return TEMPLATE_CONTENT_WITH_PATH.format(path=self.path, content=line_content_str)
+        return TEMPLATE_CONTENT_WITH_PATH.format(path=path, content=line_content_str)
 
     # def save_file(self, content):
     #     with open("NoteSearch_DataBase.txt", "a+", encoding="utf-8") as f:
@@ -92,18 +99,25 @@ class DataRead(object):
     def DataManager_Engine(self, path):
         suffix = self.postfix(path=path)
         # print(suffix)
-        content = self.decide_suffix(path=self.path,
+        content = self.decide_suffix(path=path,
                                      suffix=suffix)
-        return self.parse(content)
-
+        # print(content)
+        if content:
+            return self.parse(content, path)
+        else:
+            return "很抱歉，系统检测到：你很空虚，所以说拜拜～哈哈哈～"
     def path_generate(self):
         """生成全部要检索的路径"""
+        path_lst = []  # 路径全部放入列表
         for dirpath, dirnames, filenames in os.walk(self.path):
             # print(dirpath, dirnames, filenames)
             for filename in filenames:
                 filepath = os.path.join(dirpath, filename)
-                print(filepath)
+                # print(filepath)
+                path_lst.append(filepath)
+        return path_lst
 
-class DataSave(object):
-    def __int__(self, path):
-        self.path = path
+
+# class DataSave(object):
+#     def __int__(self, path):
+#         self.path = path

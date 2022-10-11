@@ -1,8 +1,12 @@
-from aiyc1v1 import DataRead
+from aiyc1v1 import DataManger
 
-abs_path = r"/Users/huangjiabao/GitHub/aiyc1v1/aiyc1v1/"
-d = DataRead(path=abs_path)
-d.path_generate()
+abs_path = r"/Users/huangjiabao/GitHub/aiyc1v1/aiyc1v1/NoteSearch"
+d = DataManger(path=abs_path)
+path_lst = d.path_generate()
+# print(path_lst)
+for path in path_lst:
+    r = d.DataManager_Engine(path)
+    # print("xxxx", r)
 # content = d.DataManager_Engine()
 # print(content)
 import re
