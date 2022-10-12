@@ -61,14 +61,39 @@ class DataManger(object):
         DATA_FILE_PATH_DICT["DictPath"].append(detail_dict_to_json_value)
         # json
         """清洗数据，清洗成方便后面索引的数据"""
+        # content_lst = []
+        # content_dict = {}
         line_content_str = ""
+        # for i in self.general_read(path):
+        #     print(i, end="")
+        # # print(self.general_read(path))
+        # print(self.general_read(path).index("# -*- coding: utf-8 -*-\n"))
         for line, content in enumerate(content):
             if content == "\n":
                 continue
             line_content = TEMPLATE_CONTENT.format(uuid=uuid, index=line + 1, content=content)
+            # print(line_content)
+            # print("-------独立---------")
             line_content_str = line_content_str + line_content
-
+            # print(line_content_str)
+            # print(line_content, end="")
+            # content = str(line + 1) + content
+            # content = (line+1, TEMPLATE_CONTENT.format(index=line+1, content=content))
+            # content_lst.append(content)
+            # content_dict[line + 1] = TEMPLATE_CONTENT.format(index=line + 1, content=result_content)
+            # print(content, end="")
+            # print(result_content, end="")
+            # print(dict(content_lst))
+            # print(content_dict)
+            # for value in content_dict.values():
+            #     print(value, end="")
+            # save(value)
+        # path = TEMPLATE_PATH.format(path=self.path)
         return TEMPLATE_CONTENT_WITH_PATH.format(path=path, content=line_content_str)
+
+    # def save_file(self, content):
+    #     with open("NoteSearch_DataBase.txt", "a+", encoding="utf-8") as f:
+    #         f.write(content + "\n")
 
     # ------------索引器 end------------
 
@@ -79,7 +104,7 @@ class DataManger(object):
                                      suffix=suffix)  # 读取到文件内容
         # print(content)
         if content:
-            return self.parse(content, path)  # 解析读取到的内容，并构建所需要的格式
+            return self.parse(content, path)
         else:
             return f"Path:{path},很抱歉，系统检测到：你很空虚，所以说拜拜～哈哈哈～"
 
