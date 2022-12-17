@@ -66,8 +66,9 @@ class DataManger(object):
             if content == "\n":
                 continue
             line_content = TEMPLATE_CONTENT.format(uuid=uuid, index=line + 1, content=content)
+            # print(line_content)
             line_content_str = line_content_str + line_content
-
+        #
         return TEMPLATE_CONTENT_WITH_PATH.format(path=path, content=line_content_str)
 
     # ------------索引器 end------------
@@ -103,13 +104,17 @@ class DataManger(object):
             json.dump(content, f)
 
     def run(self):
-        path_lst = self.path_generate()  # 生成所有文件路径
+        """
+        code engine
+        """
+        path_lst = self.path_generate()  # 生成所有文件路径，返回列表类型
         # print(path_lst)
         for path in path_lst:
             content = self.data_manager_engine(path)  # 每个文件路径去读取、解析
-            # print(content)
-            self.save_txt("search_data.txt", content)
-        self.save_json("FilePath.json", DATA_FILE_PATH_DICT)
+            print(content)
+            # self.save_txt("search_data.txt", content)
+        # self.save_json("FilePath.json", DATA_FILE_PATH_DICT)
+
 # class DataSave(object):
 #     def __int__(self, path):
 #         self.path = path
