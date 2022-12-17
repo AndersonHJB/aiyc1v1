@@ -4,6 +4,7 @@
 # @FileName: DataManager.py
 # @Software: PyCharm
 # @Blog    ：https://bornforthis.cn/
+from pprint import pprint
 from uuid import uuid4
 import json
 import os
@@ -68,8 +69,10 @@ class DataManger(object):
             line_content = TEMPLATE_CONTENT.format(uuid=uuid, index=line + 1, content=content)
             # print(line_content)
             line_content_str = line_content_str + line_content
-        #
-        return TEMPLATE_CONTENT_WITH_PATH.format(path=path, content=line_content_str)
+        print(line_content_str)
+
+            # print(TEMPLATE_CONTENT_WITH_PATH.format(path=path, content=line_content_str))
+        # return TEMPLATE_CONTENT_WITH_PATH.format(path=path, content=line_content_str)
 
     # ------------索引器 end------------
 
@@ -111,10 +114,13 @@ class DataManger(object):
         # print(path_lst)
         for path in path_lst:
             content = self.data_manager_engine(path)  # 每个文件路径去读取、解析
-            print(content)
+            # print(content)
             # self.save_txt("search_data.txt", content)
         # self.save_json("FilePath.json", DATA_FILE_PATH_DICT)
-
+        # pprint(DATA_FILE_PATH_DICT)
+        # print(DATA_FILE_PATH_DICT)
+        # with open("path.json", "w", encoding="utf-8")as f:
+        #     json.dump(DATA_FILE_PATH_DICT, f)
 # class DataSave(object):
 #     def __int__(self, path):
 #         self.path = path

@@ -1,8 +1,11 @@
+import json
+
 from aiyc1v1 import DataManger
 
 abs_path = "/Users/huangjiabao/GitHub/PythonProject/aiyc1v1/aiyc1v1/NoteSearch"
 d = DataManger(path=abs_path)
 d.run()
+
 
 # s = "{}"
 # path_lst = d.path_generate()
