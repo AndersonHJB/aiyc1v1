@@ -1,0 +1,44 @@
+FilePath:C:\Users\Willi\Documents\Note_Seach\build\lib\NoteBookSearch\DataRead.py
+FingerPrint=521a3992-2def-4cfb-a6f3-17f4001c4862;Line:1>>># -*- coding: utf-8 -*-
+FingerPrint=521a3992-2def-4cfb-a6f3-17f4001c4862;Line:2>>># @Time    : 28/09/2022 6:40 PM
+FingerPrint=521a3992-2def-4cfb-a6f3-17f4001c4862;Line:3>>># @Author  : William
+FingerPrint=521a3992-2def-4cfb-a6f3-17f4001c4862;Line:4>>># @FileName: DataManager.py
+FingerPrint=521a3992-2def-4cfb-a6f3-17f4001c4862;Line:5>>># @Software: PyCharm
+FingerPrint=521a3992-2def-4cfb-a6f3-17f4001c4862;Line:7>>>class DataRead(object):
+FingerPrint=521a3992-2def-4cfb-a6f3-17f4001c4862;Line:8>>>    def __init__(self, path):
+FingerPrint=521a3992-2def-4cfb-a6f3-17f4001c4862;Line:9>>>        self.path = path
+FingerPrint=521a3992-2def-4cfb-a6f3-17f4001c4862;Line:11>>>    def postfix(self, path: str):
+FingerPrint=521a3992-2def-4cfb-a6f3-17f4001c4862;Line:12>>>        '''
+FingerPrint=521a3992-2def-4cfb-a6f3-17f4001c4862;Line:13>>>        判断文件后缀
+FingerPrint=521a3992-2def-4cfb-a6f3-17f4001c4862;Line:14>>>        '''
+FingerPrint=521a3992-2def-4cfb-a6f3-17f4001c4862;Line:15>>>        suffix = path.split(".")[-1]
+FingerPrint=521a3992-2def-4cfb-a6f3-17f4001c4862;Line:16>>>        return suffix
+FingerPrint=521a3992-2def-4cfb-a6f3-17f4001c4862;Line:18>>>    def decide_suffix(self):
+FingerPrint=521a3992-2def-4cfb-a6f3-17f4001c4862;Line:19>>>        '''
+FingerPrint=521a3992-2def-4cfb-a6f3-17f4001c4862;Line:20>>>        判断文件后缀，使用对应函数打开文件
+FingerPrint=521a3992-2def-4cfb-a6f3-17f4001c4862;Line:21>>>        :return:
+FingerPrint=521a3992-2def-4cfb-a6f3-17f4001c4862;Line:22>>>        '''
+FingerPrint=521a3992-2def-4cfb-a6f3-17f4001c4862;Line:23>>>        pass
+FingerPrint=521a3992-2def-4cfb-a6f3-17f4001c4862;Line:25>>>    # def main(self):
+FingerPrint=521a3992-2def-4cfb-a6f3-17f4001c4862;Line:26>>>    #     # abs_path = r"C:\Users\Willi\Documents\Note_Seach\README.md"
+FingerPrint=521a3992-2def-4cfb-a6f3-17f4001c4862;Line:27>>>    #     d = DataRead(abs_path)
+
+FilePath:C:\Users\Willi\Documents\Note_Seach\build\lib\NoteBookSearch\NoteBookSearch.py
+FingerPrint=913220ce-e7de-4cc2-9f5d-bfef196b881f;Line:1>>>def test():
+FingerPrint=913220ce-e7de-4cc2-9f5d-bfef196b881f;Line:2>>>    print('testing')
+FilePath:C:\Users\Willi\Documents\Note_Seach\build\lib\NoteBookSearch\__init__.py
+FingerPrint=33f6ae43-f2fe-463b-9ee5-0e0e1292063b;Line:1>>># -*- coding: utf-8 -*-
+FingerPrint=33f6ae43-f2fe-463b-9ee5-0e0e1292063b;Line:2>>># @Time    : 27/09/2022 6:10 PM
+FingerPrint=33f6ae43-f2fe-463b-9ee5-0e0e1292063b;Line:3>>># @Author  : William
+FingerPrint=33f6ae43-f2fe-463b-9ee5-0e0e1292063b;Line:4>>># @FileName: __init__.py.py
+FingerPrint=33f6ae43-f2fe-463b-9ee5-0e0e1292063b;Line:5>>># @Software: PyCharm
+FingerPrint=33f6ae43-f2fe-463b-9ee5-0e0e1292063b;Line:6>>>from NoteBookSearch.NoteBookSearch import test
+FingerPrint=33f6ae43-f2fe-463b-9ee5-0e0e1292063b;Line:7>>>from NoteBookSearch.DataManager import DataRead
+FilePath:C:\Users\Willi\Documents\Note_Seach\build\lib\NoteBookSearch\__version__.py
+FingerPrint=427c0086-885e-4f4d-b175-f90b4fef2ed1;Line:1>>># 8b    d8 Yb  dP 88""Yb    db     dP""b8 88  dP    db     dP""b8 888888
+FingerPrint=427c0086-885e-4f4d-b175-f90b4fef2ed1;Line:2>>># 88b  d88  YbdP  88__dP   dPYb   dP   `" 88odP    dPYb   dP   `" 88__
+FingerPrint=427c0086-885e-4f4d-b175-f90b4fef2ed1;Line:3>>># 88YbdP88   8P   88"""   dP__Yb  Yb      88"Yb   dP__Yb  Yb  "88 88""
+FingerPrint=427c0086-885e-4f4d-b175-f90b4fef2ed1;Line:4>>># 88 YY 88  dP    88     dP""""Yb  YboodP 88  Yb dP""""Yb  YboodP 888888
+FingerPrint=427c0086-885e-4f4d-b175-f90b4fef2ed1;Line:6>>>VERSION = (0, 0, 2)
+FingerPrint=427c0086-885e-4f4d-b175-f90b4fef2ed1;Line:8>>>__version__ = '.'.join(map(str, VERSION))
+

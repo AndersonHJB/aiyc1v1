@@ -65,7 +65,13 @@ elf.content = str(pd.read_excel(self.path))
 
 ## Update
 
+### 2023年01月06日
+
+- [x] 正式发布可用的 NoteSearch
+- [x] 初步解决编写代码，文档中搜索问题
+
 ### 2022年08月20日
+
 1. 修改用户输入提示
 ```python
 template = "您选择使用默认路径:%s, \n如果确认请输入回车或者 yes(否则:no):"

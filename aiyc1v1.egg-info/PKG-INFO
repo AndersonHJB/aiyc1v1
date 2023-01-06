@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: aiyc1v1
-Version: 0.0.28
+Version: 0.0.32
 Summary: AI悦创·编程一对一教学代码库,长期招收编程一对一学员,微信:Jiabcdefh
 Home-page: https://github.com/AndersonHJB/aiyc1v1
 Author: Bornforthis
@@ -59,9 +59,9 @@ pip3 install --upgrade aiyc1v1
 
 ## 已有功能代码
 
-- [x] SimpleNLP：简单的自然语言处理代码「仅仅支持英文」——词频分析、词云生成。文档：[SimpleNLP.md](./docs/SimpleNLP.md)
-- [ ] GameBase：基础文字对话游戏
-- [ ] 
+- [x] SimpleNLP:简单的自然语言处理代码「仅仅支持英文」——词频分析、词云生成。文档：[SimpleNLP.md](./docs/SimpleNLP.md)
+- [x] GameBase:基础文字对话游戏
+- [x] NoteSearch:[文档](./aiyc1v1/NoteSearch/README.md)
 
 ## Error
 
@@ -84,7 +84,13 @@ elf.content = str(pd.read_excel(self.path))
 
 ## Update
 
+### 2023年01月06日
+
+- [x] 正式发布可用的 NoteSearch
+- [x] 初步解决编写代码，文档中搜索问题
+
 ### 2022年08月20日
+
 1. 修改用户输入提示
 ```python
 template = "您选择使用默认路径:%s, \n如果确认请输入回车或者 yes(否则:no):"

@@ -1,0 +1,221 @@
+FilePath:/Users/huangjiabao/GitHub/PythonProject/aiyc1v1/aiyc1v1/NoteSearch/SEARCH_ENGINE.py
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:1>>># -*- coding: utf-8 -*-
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:2>>># @Time    : 2023/1/6 17:51
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:3>>># @Author  : AI悦创
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:4>>># @FileName: SEARCH_ENGINE.py
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:5>>># @Software: PyCharm
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:6>>># @Blog    ：https://bornforthis.cn/
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:7>>>import re
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:8>>>from pprint import pprint
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:11>>>class Search_Engine():
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:12>>>    def __init__(self):
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:13>>>        # with open("SEARCH_DATA.txt", "r") as f:
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:14>>>        with open("SEARCH_DATA_NAME11.txt", "r") as f:
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:15>>>            self.search_data = f.read()
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:17>>>    def regex(self, query, search_data):
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:18>>>        # pattern = re.compile('FingerPrint', re.S)
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:19>>>        pattern = 'FingerPrint=(.*?);line:(\d+)>>>(.*?{query}.*)'.format(query=query)
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:20>>>        # pattern = 'FingerPrint=(.*?);line:(\d+)>>>.*?({query}.*?)'.format(query=query)
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:21>>>        print(pattern, "-------")
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:22>>>        # result = re.findall(pattern, search_data, re.S | re.I)
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:23>>>        result = re.findall(pattern, search_data)
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:24>>>        return result
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:26>>>    def search(self, user_search):
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:27>>>        print("正在运行")
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:28>>>        r = self.regex(user_search, self.search_data)
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:29>>>        pprint(r)
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:31>>>        # pattern = 'FingerPrint.*?=(.*?);line:(\d+)>>>.*?({query}).*?'
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:33>>>        # query = input(":>>>")
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:34>>>        # pattern = '.*?FilePath:(.*?).*?line:(\d+)>>>.*?(print).*?'
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:35>>>        # pattern = '.*?FilePath:(.*?).*?line:(\d+)>>>.*?({query}).*?'
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:36>>>        # print(pattern)
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:37>>>        # result = re.findall(pattern, content, re.S|re.I)
+FingerPrint=9f683b3e-8b57-4045-9b3c-57f28b7da7bb;line:38>>>        # print(result)
+
+Path:/Users/huangjiabao/GitHub/PythonProject/aiyc1v1/aiyc1v1/NoteSearch/__init__.py,很抱歉，系统检测到：你很空虚，所以说拜拜～哈哈哈～
+FilePath:/Users/huangjiabao/GitHub/PythonProject/aiyc1v1/aiyc1v1/NoteSearch/__version__.py
+FingerPrint=f52b06ff-4cdd-4edc-8704-21e001e6024b;line:1>>># 8b    d8 Yb  dP 88""Yb    db     dP""b8 88  dP    db     dP""b8 888888
+FingerPrint=f52b06ff-4cdd-4edc-8704-21e001e6024b;line:2>>># 88b  d88  YbdP  88__dP   dPYb   dP   `" 88odP    dPYb   dP   `" 88__
+FingerPrint=f52b06ff-4cdd-4edc-8704-21e001e6024b;line:3>>># 88YbdP88   8P   88"""   dP__Yb  Yb      88"Yb   dP__Yb  Yb  "88 88""
+FingerPrint=f52b06ff-4cdd-4edc-8704-21e001e6024b;line:4>>># 88 YY 88  dP    88     dP""""Yb  YboodP 88  Yb dP""""Yb  YboodP 888888
+FingerPrint=f52b06ff-4cdd-4edc-8704-21e001e6024b;line:6>>>VERSION = (0, 0, 25)
+FingerPrint=f52b06ff-4cdd-4edc-8704-21e001e6024b;line:8>>>__version__ = '.'.join(map(str, VERSION))
+
+FilePath:/Users/huangjiabao/GitHub/PythonProject/aiyc1v1/aiyc1v1/NoteSearch/README.md
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:1>>># Note Search
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:3>>>## Install
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:5>>>```python
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:6>>>pip install aiyc1v1
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:7>>>```
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:9>>>## What？
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:11>>>为解决 WilliamQX NoteBook Search 的困难，无法在短时间检索到自己所需要的知识点 or 笔记。
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:13>>>因此，诞生此库。
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:15>>>## 难点
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:17>>>1. 文件路径处理
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:18>>>2. 各个文件读取
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:19>>>3. 汇总数据存储方法「csv、xlsx、sql...」
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:20>>>4. 汇总存储时数据格式
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:21>>>5. 启动程序时，提问用户是否更新索引数据
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:22>>>6. 检索数据时返回结果格式：文件名称:path「路径」+是否自动打开文件、是否要快速获取笔记简介、笔记所处行数
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:24>>>## 预期功能「简易文本搜索器」
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:26>>>### 一、交互
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:28>>>1. 获取用户输入
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:29>>>    2. 获取用户要查询的路径
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:30>>>        3. 新路径
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:31>>>        4. 默认路径
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:32>>>    3. 获取用户要查询的内容
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:34>>>### 二、结果
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:36>>>1. 查询到结果则返回结果「该文件路径」和部分内容「前100字」
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:37>>>    2. 并提示是否自动打开文件
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:38>>>    3. 打开错误则返回报错信息
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:39>>>2. 无结果则返回提示
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:40>>>3. 询问是否继续查询
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:41>>>    4. 继续查询输入 1
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:42>>>    5. 结束查询输入 0
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:44>>>### 三、特殊功能
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:46>>>1. 每次程序启动询问是否要生成新的检索文件「意为："生成数据库"」——update
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:47>>>    2. up:更新
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:48>>>    3. noup:不更新
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:50>>>### 扩展:
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:52>>>1. 简易文件下载器
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:53>>>2. GUI or web
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:55>>>## 开发日志
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:57>>>- [x] 2022年09月30日:
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:58>>>  - [x] 文件后缀全部小写；
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:59>>>  - [x] 添加目前所能处理的目标文件后缀；
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:60>>>  - [x] 开发 .py 文件通用读取；
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:61>>>  - [x] 数据对应行数解决；
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:62>>>  - [x] 并解决相应 `行` 数问题；
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:63>>>  - [x] [https://github.com/AndersonHJB/aiyc1v1/commit/b8e11eb6af9b7011f0091a951552aa94386f53b6](https://github.com/AndersonHJB/aiyc1v1/commit/b8e11eb6af9b7011f0091a951552aa94386f53b6)
+FingerPrint=5e0d099d-cf55-4f0b-918c-f7d15892a894;line:64>>>- [x] xxxx
+
+FilePath:/Users/huangjiabao/GitHub/PythonProject/aiyc1v1/aiyc1v1/NoteSearch/NoteSearch.py
+FingerPrint=02b0d67b-d88e-4848-9dc9-9fc2ea9df6b2;line:1>>>class William():
+FingerPrint=02b0d67b-d88e-4848-9dc9-9fc2ea9df6b2;line:2>>>    def __init__(self):
+FingerPrint=02b0d67b-d88e-4848-9dc9-9fc2ea9df6b2;line:3>>>        print("sssss")
+FilePath:/Users/huangjiabao/GitHub/PythonProject/aiyc1v1/aiyc1v1/NoteSearch/DataManager.py
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:1>>># -*- coding: utf-8 -*-
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:2>>># @Time    : 2022/9/28 13:39
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:3>>># @Author  : AI悦创
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:4>>># @FileName: DataManager.py
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:5>>># @Software: PyCharm
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:6>>># @Blog    ：https://bornforthis.cn/
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:7>>>from pprint import pprint
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:8>>>from uuid import uuid4
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:9>>>import json
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:10>>>import os
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:12>>># 此库需要用到的 static variable
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:13>>>TEMPLATE_CONTENT = "FingerPrint={uuid};line:{index}>>>{content}"
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:14>>># TEMPLATE_PATH = "FilePath:{path}"
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:15>>>TEMPLATE_CONTENT_WITH_PATH = "FilePath:{path}\n{content}"
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:16>>>DATA_FILE_PATH_DICT = {"DictPath": []}  # 构建存储成 json。
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:17>>>SEARCH_DATA_FILENAME = "SEARCH_DATA.txt"
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:18>>>PATH_JSON_FILENAME = "PATH_JSON.json"
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:20>>>class DataManger(object):
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:21>>>    def __init__(self, path: str):
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:22>>>        self.path = path
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:24>>>    # ------------搜索器 start------------
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:25>>>    def postfix(self, path: str):
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:26>>>        """判断文件后缀"""
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:27>>>        suffix = path.split(".")[-1]
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:28>>>        sum_suffix = [
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:29>>>            "py", "xlsx", "xls", "html", "css", "js",
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:30>>>            "txt", "csv", "json", "md"
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:31>>>        ]
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:32>>>        # print(suffix)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:33>>>        # return path, suffix
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:34>>>        if suffix in sum_suffix:
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:35>>>            return suffix.lower()
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:36>>>        else:
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:37>>>            return ""
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:39>>>    def general_read(self, path):
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:40>>>        """通用文件读取"""
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:41>>>        with open(path, "r", encoding="utf-8") as f:
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:42>>>            return f.readlines()
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:43>>>            # return f.read()
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:45>>>    def decide_suffix(self, path, suffix):
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:46>>>        """判断文件后缀，使用对应的函数打开文件"""
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:47>>>        if suffix == "py":
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:48>>>            # content_list = self.general_read(path)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:49>>>            return self.general_read(path)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:50>>>        elif suffix == "txt":
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:51>>>            return self.general_read(path)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:52>>>        elif suffix == "md":
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:53>>>            return self.general_read(path)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:55>>>    # ------------搜索器 end------------
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:57>>>    # ------------索引器 start------------
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:58>>>    def parse(self, content, path):
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:59>>>        global DATA_FILE_PATH_DICT  # 全局字典，便于后期存储成 json 文件
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:60>>>        uuid = str(uuid4())
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:61>>>        detail_dict_to_json_value = {uuid: path}
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:62>>>        # print(detail_dict_to_json_value)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:63>>>        DATA_FILE_PATH_DICT["DictPath"].append(detail_dict_to_json_value)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:64>>>        # json
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:65>>>        """清洗数据，清洗成方便后面索引的数据"""
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:66>>>        line_content_str = ""
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:67>>>        # line_content_str = str()
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:68>>>        for line, content in enumerate(content):
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:69>>>            if content == "\n":
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:70>>>                continue
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:71>>>            line_content = TEMPLATE_CONTENT.format(uuid=uuid, index=line + 1, content=content)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:72>>>            # line_content = "FingerPrint={uuid};line:{index}>>>{content}".format(uuid=uuid, index=line + 1, content=content)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:73>>>            # print(line_content)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:74>>>            # line_content 自动换行
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:75>>>            line_content_str = line_content_str + line_content
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:76>>>        # print("xxxxxxxx", line_content_str)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:78>>>            # print(TEMPLATE_CONTENT_WITH_PATH.format(path=path, content=line_content_str))
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:79>>>            # print("-"*100)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:80>>>        # "FilePath:{path}\n{content}"
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:81>>>        return TEMPLATE_CONTENT_WITH_PATH.format(path=path, content=line_content_str)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:83>>>    # ------------索引器 end------------
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:85>>>    def data_manager_engine(self, path):
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:86>>>        suffix = self.postfix(path=path)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:87>>>        # print(suffix)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:88>>>        content = self.decide_suffix(path=path,
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:89>>>                                     suffix=suffix)  # 读取到文件内容
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:90>>>        # print(content)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:91>>>        if content:
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:92>>>            return self.parse(content, path)  # 解析读取到的内容，并构建所需要的格式
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:93>>>        else:
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:94>>>            return f"Path:{path},很抱歉，系统检测到：你很空虚，所以说拜拜～哈哈哈～"
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:96>>>    def path_generate(self):
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:97>>>        """生成全部要检索的路径"""
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:98>>>        path_lst = []  # 路径全部放入列表
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:99>>>        for dirpath, dirnames, filenames in os.walk(self.path):
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:100>>>            # print(dirpath, dirnames, filenames)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:101>>>            for filename in filenames:
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:102>>>                filepath = os.path.join(dirpath, filename)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:103>>>                # print(filepath)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:104>>>                path_lst.append(filepath)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:105>>>        return path_lst
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:107>>>    def save_txt(self, filename, content):
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:108>>>        with open(filename, "a+", encoding="utf-8") as f:
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:109>>>            f.write(content + "\n")
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:111>>>    def save_json(self, filename, content):
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:112>>>        with open(filename, "a+", encoding="utf-8") as f:
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:113>>>            json.dump(content, f)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:115>>>    def run(self):
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:116>>>        """
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:117>>>        code engine
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:118>>>        """
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:119>>>        path_lst = self.path_generate()  # 生成所有文件路径，返回列表类型
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:120>>>        # print(path_lst)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:121>>>        if os.path.exists(SEARCH_DATA_FILENAME):
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:122>>>            os.remove(SEARCH_DATA_FILENAME)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:123>>>        if os.path.exists(PATH_JSON_FILENAME):
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:124>>>            os.remove(PATH_JSON_FILENAME)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:125>>>        for path in path_lst:
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:126>>>            content = self.data_manager_engine(path)  # 每个文件路径去读取、解析
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:127>>>            # print(type(content))
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:128>>>            # print(content)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:129>>>            # print("-" * 100)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:130>>>            self.save_txt(SEARCH_DATA_FILENAME, content)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:131>>>        self.save_json(PATH_JSON_FILENAME, DATA_FILE_PATH_DICT)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:132>>>        # pprint(DATA_FILE_PATH_DICT)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:133>>>        # print(DATA_FILE_PATH_DICT)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:134>>>        # with open("path.json", "w", encoding="utf-8")as f:
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:135>>>        #     json.dump(DATA_FILE_PATH_DICT, f)
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:136>>># class DataSave(object):
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:137>>>#     def __int__(self, path):
+FingerPrint=6de42678-b205-4c5b-b543-cf166859acd7;line:138>>>#         self.path = path
+

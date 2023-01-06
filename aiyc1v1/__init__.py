@@ -7,3 +7,4 @@ from aiyc1v1.class_coder.Q1 import Q1
 # from aiyc1v1.simplesearch.DataManager import DataSearch
 from aiyc1v1.GameFunction import GameFunction
 from aiyc1v1.NoteSearch.DataManager import DataManger
+from aiyc1v1.NoteSearch.SEARCH_ENGINE import Search_Engine

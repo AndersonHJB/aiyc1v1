@@ -1,11 +1,19 @@
 import json
+import os
 
-from aiyc1v1 import DataManger
+from aiyc1v1 import DataManger, Search_Engine
 
 abs_path = "/Users/huangjiabao/GitHub/PythonProject/aiyc1v1/aiyc1v1/NoteSearch"
 d = DataManger(path=abs_path)
 d.run()
 
+s = Search_Engine()
+s.search("postfix")
+
+# r = os.path.exists("search_data.txt")
+# print(r)
+# import os
+# os.remove("search_data.txt")
 
 # s = "{}"
 # path_lst = d.path_generate()
