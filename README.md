@@ -57,7 +57,7 @@ numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with s
 
 ```python
 self.content = str(pd.read_csv(self.path))
-elf.content = str(pd.read_excel(self.path))
+self.content = str(pd.read_excel(self.path))
 ```
 
 

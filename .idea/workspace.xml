@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1397b7a-e13a-4051-97e3-ee370afde819" name="Changes" comment="可用版本">
-      <change afterPath="$PROJECT_DIR$/aiyc1v1/DelayWait/DelayWait.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aiyc1v1/DelayWait/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aiyc1v1/DelayWait/__version__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiyc1v1/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiyc1v1/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -218,7 +213,7 @@
       <workItem from="1671426642318" duration="5576000" />
       <workItem from="1672995931336" duration="9607000" />
       <workItem from="1673011749090" duration="48000" />
-      <workItem from="1673057412458" duration="2666000" />
+      <workItem from="1673057412458" duration="2745000" />
     </task>
     <task id="LOCAL-00001" summary="修改路径">
       <created>1671255499474</created>

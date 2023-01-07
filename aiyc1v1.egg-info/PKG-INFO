@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: aiyc1v1
-Version: 0.0.33
+Version: 0.0.34
 Summary: AI悦创·编程一对一教学代码库,长期招收编程一对一学员,微信:Jiabcdefh
 Home-page: https://github.com/AndersonHJB/aiyc1v1
 Author: Bornforthis
@@ -76,7 +76,7 @@ numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with s
 
 ```python
 self.content = str(pd.read_csv(self.path))
-elf.content = str(pd.read_excel(self.path))
+self.content = str(pd.read_excel(self.path))
 ```
 
 
