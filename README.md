@@ -9,7 +9,7 @@
 如果你换源了，请用下面的命令获取最新版本：
 
 ```python
-pip install aiy1v1 -i https://pypi.org/simple
+pip install aiyc1v1 -i https://pypi.org/simple
 ```
 
 国内镜像源同步，比较缓慢，一般需要一天左右才会同步。

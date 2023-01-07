@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: aiyc1v1
-Version: 0.0.34
+Version: 0.0.35
 Summary: AI悦创·编程一对一教学代码库,长期招收编程一对一学员,微信:Jiabcdefh
 Home-page: https://github.com/AndersonHJB/aiyc1v1
 Author: Bornforthis
@@ -28,7 +28,7 @@ License-File: LICENSE
 如果你换源了，请用下面的命令获取最新版本：
 
 ```python
-pip install aiy1v1 -i https://pypi.org/simple
+pip install aiyc1v1 -i https://pypi.org/simple
 ```
 
 国内镜像源同步，比较缓慢，一般需要一天左右才会同步。
