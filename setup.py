@@ -17,11 +17,11 @@ URL = 'https://github.com/AndersonHJB/aiyc1v1'
 EMAIL = 'bornforthis@bornforthis.com'
 AUTHOR = 'Bornforthis'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.0.32'
+VERSION = '0.0.33'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
-    'pyecharts', 'faker', 'pandas', 'openpyxl', 'xlrd'
+    'pyecharts', 'faker', 'pandas', 'openpyxl', 'xlrd', 'requests',
 ]
 
 # What packages are optional?

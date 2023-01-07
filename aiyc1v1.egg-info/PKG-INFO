@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: aiyc1v1
-Version: 0.0.32
+Version: 0.0.33
 Summary: AI悦创·编程一对一教学代码库,长期招收编程一对一学员,微信:Jiabcdefh
 Home-page: https://github.com/AndersonHJB/aiyc1v1
 Author: Bornforthis
@@ -62,6 +62,7 @@ pip3 install --upgrade aiyc1v1
 - [x] SimpleNLP:简单的自然语言处理代码「仅仅支持英文」——词频分析、词云生成。文档：[SimpleNLP.md](./docs/SimpleNLP.md)
 - [x] GameBase:基础文字对话游戏
 - [x] NoteSearch:[文档](./aiyc1v1/NoteSearch/README.md)
+- [x] DelayWait: 智能爬虫插件「2023年01月07日」
 
 ## Error
 

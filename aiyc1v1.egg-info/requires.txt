@@ -3,3 +3,4 @@ faker
 pandas
 openpyxl
 xlrd
+requests

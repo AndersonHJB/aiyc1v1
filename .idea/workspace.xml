@@ -4,34 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1397b7a-e13a-4051-97e3-ee370afde819" name="Changes" comment="添加 why json">
-      <change afterPath="$PROJECT_DIR$/PATH_JSON.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SEARCH_DATA.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SEARCH_DATA_NAME.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SEARCH_DATA_NAME11.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SEARCH_DATA_NAME2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aiyc1v1/NoteSearch/SEARCH_ENGINE.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/aiyc1v1/NoteSearch/DataManager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/aiyc1v1/NoteSearch/SEARCH_ENGINE.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/aiyc1v1/simplesearch/DataManager_old.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/aiyc1v1-0.0.31.tar.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/path.json" afterDir="false" />
+    <list default="true" id="b1397b7a-e13a-4051-97e3-ee370afde819" name="Changes" comment="可用版本">
+      <change afterPath="$PROJECT_DIR$/aiyc1v1/DelayWait/DelayWait.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aiyc1v1/DelayWait/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aiyc1v1/DelayWait/__version__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiyc1v1.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/aiyc1v1.egg-info/PKG-INFO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiyc1v1.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/aiyc1v1.egg-info/SOURCES.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiyc1v1/NoteSearch/DataManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiyc1v1/NoteSearch/DataManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiyc1v1/NoteSearch/__version__.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiyc1v1/NoteSearch/__version__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aiyc1v1/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiyc1v1/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiyc1v1/class_coder/__version__.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiyc1v1/class_coder/__version__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/aiyc1v1/NoteSearch/__version__.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/aiyc1v1/NoteSearch/__version__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/aiyc1v1/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/aiyc1v1/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/aiyc1v1/class_coder/__version__.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/aiyc1v1/class_coder/__version__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/aiyc1v1-0.0.28-py2.py3-none-any.whl" beforeDir="false" afterPath="$PROJECT_DIR$/dist/aiyc1v1-0.0.31-py2.py3-none-any.whl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/aiyc1v1-0.0.28-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/aiyc1v1-0.0.28.tar.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search_data.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,18 +53,19 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/huangjiabao/GitHub/PythonProject/aiyc1v1",
+    "last_opened_file_path": "/Users/huangjiabao/GitHub/PythonProject/aiyc1v1/aiyc1v1/DelayWait",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "settings.editor.selected.configurable": "terminal",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/aiyc1v1/DelayWait" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/aiyc1v1" />
       <recent name="$PROJECT_DIR$/aiyc1v1/NoteSearch" />
@@ -96,7 +77,7 @@
       <recent name="$PROJECT_DIR$/aiyc1v1/simplesearch" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.DelayWait">
     <configuration name="DataManager" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="aiyc1v1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -111,6 +92,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aiyc1v1/NoteSearch/DataManager.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DelayWait" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="aiyc1v1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/aiyc1v1/DelayWait" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aiyc1v1/DelayWait/DelayWait.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,28 +166,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="simplenlp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="aiyc1v1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/aiyc1v1/class_coder" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aiyc1v1/class_coder/simplenlp.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="deploy.sh" type="ShConfigurationType" temporary="true">
       <option name="SCRIPT_TEXT" value="" />
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
@@ -202,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.DelayWait" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.DataManager" />
         <item itemvalue="Python.aiycsnlp-Tester" />
         <item itemvalue="Shell Script.deploy.sh" />
-        <item itemvalue="Python.simplenlp" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +216,9 @@
       <workItem from="1670994910547" duration="5396000" />
       <workItem from="1671253370216" duration="7260000" />
       <workItem from="1671426642318" duration="5576000" />
-      <workItem from="1672995931336" duration="8129000" />
+      <workItem from="1672995931336" duration="9607000" />
+      <workItem from="1673011749090" duration="48000" />
+      <workItem from="1673057412458" duration="2666000" />
     </task>
     <task id="LOCAL-00001" summary="修改路径">
       <created>1671255499474</created>
@@ -251,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671260761785</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="可用版本">
+      <created>1673005304530</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673005304530</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +264,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="修改路径" />
     <MESSAGE value="添加 why json" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加 why json" />
+    <MESSAGE value="可用版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="可用版本" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/aiyc1v1$main.coverage" NAME="main Coverage Results" MODIFIED="1673001749211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -284,5 +275,6 @@
     <SUITE FILE_PATH="coverage/aiyc1v1$aiycsnlp_Tester.coverage" NAME="aiycsnlp-Tester Coverage Results" MODIFIED="1670997868836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/aiyc1v1$DataManager.coverage" NAME="DataManager Coverage Results" MODIFIED="1672997591411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aiyc1v1/NoteSearch" />
     <SUITE FILE_PATH="coverage/aiyc1v1$DataRead.coverage" NAME="DataManager Coverage Results" MODIFIED="1665381480807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aiyc1v1/NoteSearch" />
+    <SUITE FILE_PATH="coverage/aiyc1v1$DelayWait.coverage" NAME="DelayWait Coverage Results" MODIFIED="1673059877566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aiyc1v1/DelayWait" />
   </component>
 </project>

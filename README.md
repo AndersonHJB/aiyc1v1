@@ -43,6 +43,7 @@ pip3 install --upgrade aiyc1v1
 - [x] SimpleNLP:简单的自然语言处理代码「仅仅支持英文」——词频分析、词云生成。文档：[SimpleNLP.md](./docs/SimpleNLP.md)
 - [x] GameBase:基础文字对话游戏
 - [x] NoteSearch:[文档](./aiyc1v1/NoteSearch/README.md)
+- [x] DelayWait: 智能爬虫插件「2023年01月07日」
 
 ## Error
 
