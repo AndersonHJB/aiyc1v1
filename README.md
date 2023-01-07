@@ -45,6 +45,19 @@ pip3 install --upgrade aiyc1v1
 - [x] NoteSearch:[文档](./aiyc1v1/NoteSearch/README.md)
 - [x] DelayWait: 智能爬虫插件「2023年01月07日」
 
+## 使用示例
+- DelayWait
+```python
+from aiyc1v1 import DelayWait
+import requests
+if __name__ == '__main__':
+    urls = ["https://bornforthis.cn"] * 10
+    d = DelayWait()
+    for url in urls:
+        html = requests.get(url)
+        d.wait(url)
+        print(html.status_code)
+```
 ## Error
 
 ### 2022年08月20日
