@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: aiyc1v1
-Version: 0.0.43
+Version: 0.0.44
 Summary: AI悦创·编程一对一教学代码库,长期招收编程一对一学员,微信:Jiabcdefh
 Home-page: https://github.com/AndersonHJB/aiyc1v1
 Author: Bornforthis
@@ -93,7 +93,7 @@ from aiyc1v1 import DataManger, Search_Engine
 abs_path = "your/project/path"
 d = DataManger(path=abs_path)
 
-s = Search_Engine(language="zh_0CN")
+s = Search_Engine(language="zh_CN")
 s.search("专栏")
 ```
 
