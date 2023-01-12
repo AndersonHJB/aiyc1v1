@@ -73,7 +73,6 @@ from aiyc1v1 import DataManger, Search_Engine
 
 abs_path = "your/project/path"
 d = DataManger(path=abs_path)
-d.run()
 
 s = Search_Engine(language="zh_0CN")
 s.search("专栏")

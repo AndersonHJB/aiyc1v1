@@ -17,11 +17,11 @@ DATA_FILE_PATH_DICT = {"DictPath": []}  # 构建存储成 json。
 SEARCH_DATA_FILENAME = "SEARCH_DATA.txt"
 PATH_JSON_FILENAME = "PATH_JSON.json"
 
+
 class DataManger(object):
     def __init__(self, path: str):
         self.path = path
         self.run()
-
 
     # ------------搜索器 start------------
     def postfix(self, path: str):
@@ -77,8 +77,8 @@ class DataManger(object):
             line_content_str = line_content_str + line_content
         # print("xxxxxxxx", line_content_str)
 
-            # print(TEMPLATE_CONTENT_WITH_PATH.format(path=path, content=line_content_str))
-            # print("-"*100)
+        # print(TEMPLATE_CONTENT_WITH_PATH.format(path=path, content=line_content_str))
+        # print("-"*100)
         # "FilePath:{path}\n{content}"
         return TEMPLATE_CONTENT_WITH_PATH.format(path=path, content=line_content_str)
 
