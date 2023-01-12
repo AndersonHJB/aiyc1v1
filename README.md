@@ -1,10 +1,20 @@
-# 📦 Bornforthis Library Python 1v1
+# 📦 Bornforthis Library Python aiyc1v1
 
-## What?
+## 1. What?
 
-带编程一对一学员学习 Python 所开发的库，便于零基础小白学习。和部分实用功能：简单的 NLP、类游戏、SimpleSearch 等功能。
+带编程一对一学员学习 Python 所开发的库，便于零基础小白学习。和部分实用功能，目前拥有：
 
-## Install
+- [x] 简单的 NLP
+
+- [x] 类游戏
+- [x] NoteSearch：[https://github.com/AndersonHJB/aiyc1v1/tree/main/aiyc1v1/NoteSearch](https://github.com/AndersonHJB/aiyc1v1/tree/main/aiyc1v1/NoteSearch)
+- [x] 爬虫延迟插件「DelayWait」：[https://github.com/AndersonHJB/aiyc1v1/tree/main/aiyc1v1/DelayWait](https://github.com/AndersonHJB/aiyc1v1/tree/main/aiyc1v1/DelayWait)
+
+如果，你有想要实现的功能，迟迟未实现，可以提交 issue 给我。[https://github.com/AndersonHJB/aiyc1v1/issues](https://github.com/AndersonHJB/aiyc1v1/issues)
+
+
+
+## 2. Install
 
 如果你换源了，请用下面的命令获取最新版本：
 
@@ -18,7 +28,7 @@ pip install aiyc1v1 -i https://pypi.org/simple
 pip install aiy1v1
 ```
 
-## Upgrade
+## 3. Upgrade
 
 版本在快速的迭代中，所以如果需要最新版本的话，请用下面的命令。
 
@@ -32,21 +42,38 @@ pip3 install --upgrade aiyc1v1
 
 
 
-## Github
+## 4. 项目文档
+
+本部分是对已有的项目进行详细介绍，自行点入进行阅读。
+
+- NoteSearch：[README](https://github.com/AndersonHJB/aiyc1v1/blob/main/aiyc1v1/NoteSearch/README.md)
+- 爬虫延迟插件：
+
+
+
+## 5. Github
 
 本项目的 GitHub 地址：[https://github.com/AndersonHJB/aiyc1v1](https://github.com/AndersonHJB/aiyc1v1)
 
 
 
-## 已有功能代码
+## 6. 已有功能代码
 
 - [x] SimpleNLP:简单的自然语言处理代码「仅仅支持英文」——词频分析、词云生成。文档：[SimpleNLP.md](./docs/SimpleNLP.md)
 - [x] GameBase:基础文字对话游戏
 - [x] NoteSearch:[文档](./aiyc1v1/NoteSearch/README.md)
 - [x] DelayWait: 智能爬虫插件「2023年01月07日」
 
-## 使用示例
-- DelayWait
+## 7. 使用示例
+
+### NoteSearch
+
+
+
+### DelayWait
+
+更智能的延迟请求插件，使你摆脱单纯使用 `time.sleep()`。具体实现逻辑，我也会在该插件文档中为你解答。
+
 ```python
 from aiyc1v1 import DelayWait
 import requests
@@ -77,7 +104,13 @@ self.content = str(pd.read_excel(self.path))
 
 
 
-## Update
+## Changelog
+
+- Bug Fixes：bug 修复
+-  ⚠ BREAKING CHANGES：⚠ 重大变化
+- Features：特征
+- Reverts：还原
+- Performance Improvements：性能改进
 
 ### 2023年01月06日
 
@@ -112,3 +145,5 @@ C++ 信息奥赛题解，长期更新！长期招收一对一中小学信息奥�
 
 
 ![](https://bornforthis.cn/zsxq.jpg)
+
+[![Security Status](https://www.murphysec.com/platform3/v3/badge/1610659414206361600.svg?t=1)](https://www.murphysec.com/accept?code=6e60439b6c9115849c8c231139adc3f5&type=1&from=2&t=2)
