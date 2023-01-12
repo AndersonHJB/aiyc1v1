@@ -9,10 +9,6 @@ import re
 import time
 from pprint import pprint
 
-
-
-
-
 class Search_Engine():
     def __init__(self):
         with open("SEARCH_DATA.txt", "r") as f:
