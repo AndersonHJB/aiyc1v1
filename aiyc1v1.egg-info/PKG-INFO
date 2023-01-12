@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: aiyc1v1
-Version: 0.0.40
+Version: 0.0.41
 Summary: AI悦创·编程一对一教学代码库,长期招收编程一对一学员,微信:Jiabcdefh
 Home-page: https://github.com/AndersonHJB/aiyc1v1
 Author: Bornforthis
@@ -86,6 +86,17 @@ pip3 install --upgrade aiyc1v1
 ## 7. 使用示例
 
 ### NoteSearch
+
+```python
+from aiyc1v1 import DataManger, Search_Engine
+
+abs_path = "your/project/path"
+d = DataManger(path=abs_path)
+d.run()
+
+s = Search_Engine(language="zh_0CN")
+s.search("专栏")
+```
 
 
 
