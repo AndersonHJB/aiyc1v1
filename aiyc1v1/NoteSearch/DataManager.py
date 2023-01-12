@@ -20,6 +20,8 @@ PATH_JSON_FILENAME = "PATH_JSON.json"
 class DataManger(object):
     def __init__(self, path: str):
         self.path = path
+        self.run()
+
 
     # ------------搜索器 start------------
     def postfix(self, path: str):
