@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="b1397b7a-e13a-4051-97e3-ee370afde819" name="Changes" comment="可用版本">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PATH_JSON.json" beforeDir="false" afterPath="$PROJECT_DIR$/PATH_JSON.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEARCH_DATA.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SEARCH_DATA.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aiyc1v1/NoteSearch/SEARCH_ENGINE.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiyc1v1/NoteSearch/SEARCH_ENGINE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiyc1v1/NoteSearch/__version__.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiyc1v1/NoteSearch/__version__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,6 +122,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="SEARCH_ENGINE" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="aiyc1v1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/aiyc1v1/NoteSearch" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aiyc1v1/NoteSearch/SEARCH_ENGINE.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="aiycsnlp-Tester" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="aiyc1v1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -161,28 +188,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="deploy.sh" type="ShConfigurationType" temporary="true">
-      <option name="SCRIPT_TEXT" value="" />
-      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/deploy.sh" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-      <option name="INTERPRETER_PATH" value="/bin/zsh" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="EXECUTE_IN_TERMINAL" value="true" />
-      <option name="EXECUTE_SCRIPT_FILE" value="true" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.SEARCH_ENGINE" />
         <item itemvalue="Python.DelayWait" />
         <item itemvalue="Python.DataManager" />
         <item itemvalue="Python.aiycsnlp-Tester" />
-        <item itemvalue="Shell Script.deploy.sh" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +231,9 @@
       <workItem from="1673138057874" duration="9000" />
       <workItem from="1673270872544" duration="5029000" />
       <workItem from="1673309779184" duration="2009000" />
-      <workItem from="1673497190460" duration="564000" />
+      <workItem from="1673497190460" duration="2560000" />
+      <workItem from="1673508121780" duration="108000" />
+      <workItem from="1673525488613" duration="5879000" />
     </task>
     <task id="LOCAL-00001" summary="修改路径">
       <created>1671255499474</created>
@@ -269,7 +283,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="可用版本" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/aiyc1v1$main.coverage" NAME="main Coverage Results" MODIFIED="1673497466780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/aiyc1v1$main.coverage" NAME="main Coverage Results" MODIFIED="1673533502457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aiyc1v1$simplenlp.coverage" NAME="simplenlp Coverage Results" MODIFIED="1661473943048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aiyc1v1/class_coder" />
     <SUITE FILE_PATH="coverage/aiyc1v1$SimpleSearch.coverage" NAME="SimpleSearch Coverage Results" MODIFIED="1661126640510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aiyc1v1/class_coder" />
     <SUITE FILE_PATH="coverage/aiyc1v1$Q1.coverage" NAME="Q1 Coverage Results" MODIFIED="1660886331152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aiyc1v1/class_coder" />
@@ -277,5 +291,6 @@
     <SUITE FILE_PATH="coverage/aiyc1v1$DataManager.coverage" NAME="DataManager Coverage Results" MODIFIED="1672997591411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aiyc1v1/NoteSearch" />
     <SUITE FILE_PATH="coverage/aiyc1v1$DataRead.coverage" NAME="DataManager Coverage Results" MODIFIED="1665381480807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aiyc1v1/NoteSearch" />
     <SUITE FILE_PATH="coverage/aiyc1v1$DelayWait.coverage" NAME="DelayWait Coverage Results" MODIFIED="1673059877566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aiyc1v1/DelayWait" />
+    <SUITE FILE_PATH="coverage/aiyc1v1$SEARCH_ENGINE.coverage" NAME="SEARCH_ENGINE Coverage Results" MODIFIED="1673532340965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aiyc1v1/NoteSearch" />
   </component>
 </project>

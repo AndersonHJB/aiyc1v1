@@ -112,6 +112,20 @@ self.content = str(pd.read_excel(self.path))
 - Reverts：还原
 - Performance Improvements：性能改进
 
+## 2023年01月12日
+
+### Bug
+
+- 文件读取，过程中，编码问题。
+
+### Features
+
+- 多语言支持
+- 询问用户：查询到 xx 条数据，请问要返回几条？、全部「all」
+- 
+
+
+
 ### 2023年01月06日
 
 - [x] 正式发布可用的 NoteSearch

@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: aiyc1v1
-Version: 0.0.39
+Version: 0.0.40
 Summary: AI悦创·编程一对一教学代码库,长期招收编程一对一学员,微信:Jiabcdefh
 Home-page: https://github.com/AndersonHJB/aiyc1v1
 Author: Bornforthis
@@ -130,6 +130,20 @@ self.content = str(pd.read_excel(self.path))
 - Features：特征
 - Reverts：还原
 - Performance Improvements：性能改进
+
+## 2023年01月12日
+
+### Bug
+
+- 文件读取，过程中，编码问题。
+
+### Features
+
+- 多语言支持
+- 询问用户：查询到 xx 条数据，请问要返回几条？、全部「all」
+- 
+
+
 
 ### 2023年01月06日
 
