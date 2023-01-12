@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b1397b7a-e13a-4051-97e3-ee370afde819" name="Changes" comment="可用版本">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PATH_JSON.json" beforeDir="false" afterPath="$PROJECT_DIR$/PATH_JSON.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEARCH_DATA.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SEARCH_DATA.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aiyc1v1/NoteSearch/SEARCH_ENGINE.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiyc1v1/NoteSearch/SEARCH_ENGINE.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
@@ -221,7 +219,7 @@
       <workItem from="1673138057874" duration="9000" />
       <workItem from="1673270872544" duration="5029000" />
       <workItem from="1673309779184" duration="2009000" />
-      <workItem from="1673497190460" duration="358000" />
+      <workItem from="1673497190460" duration="564000" />
     </task>
     <task id="LOCAL-00001" summary="修改路径">
       <created>1671255499474</created>

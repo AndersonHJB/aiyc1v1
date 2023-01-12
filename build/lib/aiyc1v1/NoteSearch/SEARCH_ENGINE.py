@@ -11,7 +11,7 @@ from pprint import pprint
 
 class Search_Engine():
     def __init__(self):
-        with open("SEARCH_DATA.txt", "r") as f:
+        with open("SEARCH_DATA.txt", "r", encoding="utf-8") as f:
             self.search_data = f.read()
 
     def regex(self, query, search_data):
